@@ -1,0 +1,11 @@
+#e5ffcf - Pastel Green
+#cafcb6 - Tea Green
+#affa9d - Pale Tea Green
+#94f784 - Bright Lime Green
+#79f46b - Light Bright Lime Green
+#008a00 - Office Green
+#0f9d0d - Vibrant Green
+#1eb01a - Shamrock Green
+#2cc226 - Lime Green
+#3bd533 - Yellow-Green
+#004200 - Dark Forest Green

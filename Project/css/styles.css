@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #affa9d;
+    background: linear-gradient(to right, #cafcb6, #e5ffcf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Left Box (Login side) */
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #79f46b;
+    background: linear-gradient(to right, #a0fc89, #79f46b);
+    width: 500px;
+    max-width: 100%;
+    min-height: 550px;
+    border-radius: 5px 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    z-index: 1;
+}
+
+.container1 form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Login title */
+
+.container1 h1 {
+    color: #004200;
+    display: flex;
+    transform: translateY(-60px);
+}
+
+/* Input */
+
+.container1 input {
+    width: 300px;
+    margin: 8px 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Input box */
+
+.container1 .input-box {
+    position: relative;
+    width: 380px;
+    padding: 25px;
+    margin: 8px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: #cafcb6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35), inset 4px 0 0 rgb(0, 66, 0), inset 0 0 20px rgba(0, 66, 0, 0.404);
+}
+
+.container1 input::placeholder {
+    font-style: italic;
+    color: #0042006b;
+}
+
+/* Input box icons */
+
+.container1 .input-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorMove 3s linear infinite;
+}
+
+/* Separator ("|") between icon and input box */
+
+.container1 .input-box p {
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-10px);
+    font-size: 14px;
+    color: #0042004d;
+}
+
+/* 'Remember Me' & 'Forgot Password?' wrapper */
+
+.container1 .remember-forgot {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #f2ffe7;
+    position: relative;
+    transform: translateY(12px);
+}
+
+/* 'Remember Me' checkbox */
+
+.container1 .remember-forgot label input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    vertical-align: middle;
+    transform: translate(-10px, -2px);
+    accent-color: #0f9400;
+}
+
+/* 'Forgot Password?' Hyperlink */
+
+.container1 a {
+    color: #f2ffe7;
+    font-size: 14px;
+    margin-left: 97px;
+}
+
+/* 'Log in' button */
+
+.container1 button {
+    display: flex;
+    background-color: #cafcb6;
+    color: #0f9400;
+    font-size: 15px;
+    padding: 13px 50px;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+    transform: translateY(50px);
+}
+
+/* User Icon (Inside 'Log in' Button) */
+
+.container1 button i {
+    vertical-align: middle;
+    transform: translate(-5px, 5px);
+    font-size: 12px;
+}
+
+/* Right box (Sign Up side) */
+
+.container2 {
+    background-color: #affa9d;
+    background: linear-gradient(to right, #affa9d, #a6fa84);
+    width: 600px;
+    max-width: 100%;
+    min-height: 650px;
+    border-radius: 30px 5px;
+    transform: translateX(40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
+    z-index: 0;
+}
+
+/* Right box title */
+
+.container2 h1 {
+    transform: translateX(25%);
+    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorMove 3s linear infinite;
+}
+
+/* Subtitle */
+
+.container2 p {
+    transform: translateY(30%);
+    color: #0f9d0d;
+}
+
+/* 'Sign Up' Button */
+
+.container2 button {
+    background-color: #cafcb6;
+    transform: translate(55%, 100%);
+    font-size: 15px;
+    padding: 13px 50px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
+    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorMove 3s linear infinite;
+}
+
+/* Color gradient animation */
+
+@keyframes colorMove {
+    0% {
+        background-position: 0% 0;
+        color: transparent;
+    }
+
+    100% {
+        background-position: 100% 0;
+        color: transparent;
+    }
+}
