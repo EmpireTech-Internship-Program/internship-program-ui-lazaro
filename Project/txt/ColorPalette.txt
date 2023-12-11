@@ -9,3 +9,7 @@
 #2cc226 - Lime Green
 #3bd533 - Yellow-Green
 #004200 - Dark Forest Green
+#f1b56f - Apricot Gold
+#d6a56d - Caramel Tan
+#5e3a02 - Rustic Brown
+#4c2a00 - Mahogany Brown

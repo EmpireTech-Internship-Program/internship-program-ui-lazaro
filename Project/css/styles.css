@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #affa9d;
-    background: linear-gradient(to right, #cafcb6, #e5ffcf);
+    background-color: #ffce95;
+    background: linear-gradient(to right, #f1b56f, #d6a56d);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,24 +19,24 @@ body {
 
 /* Left Box (Login side) */
 
-.container1 {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #79f46b;
-    background: linear-gradient(to right, #a0fc89, #79f46b);
+    background-color: #5e3a02;
+    background: linear-gradient(to right, #5e3a02, #4c2a00);
     width: 500px;
     max-width: 100%;
     min-height: 550px;
     border-radius: 5px 30px;
     position: absolute;
     transform: translateX(-50%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
     z-index: 1;
 }
 
-.container1 form {
+.container .login-container form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,25 +45,15 @@ body {
 
 /* Login title */
 
-.container1 h1 {
-    color: #004200;
+.container .login-container h1 {
+    color: #2cc226;
     display: flex;
     transform: translateY(-60px);
 }
 
-/* Input */
-
-.container1 input {
-    width: 300px;
-    margin: 8px 50px;
-    border: 0;
-    outline: none;
-    background-color: transparent;
-}
-
 /* Input box */
 
-.container1 .input-box {
+.container .login-container .input-box {
     position: relative;
     width: 380px;
     padding: 25px;
@@ -71,33 +61,39 @@ body {
     border: 0;
     border-radius: 10px;
     outline: none;
-    background-color: #cafcb6;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35), inset 4px 0 0 rgb(0, 66, 0), inset 0 0 20px rgba(0, 66, 0, 0.404);
+    background-color: #7ec063;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 rgb(31, 150, 31);
+    transform: translateY(-15px);
 }
 
-.container1 input::placeholder {
+/* Input */
+
+.container .login-container input {
+    width: 300px;
+    margin: 8px 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.container .login-container input::placeholder {
     font-style: italic;
     color: #0042006b;
 }
 
 /* Input box icons */
 
-.container1 .input-box i {
+.container .login-container .input-box i {
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-5px);
-    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
-    background-size: 200% 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: colorMove 3s linear infinite;
+    color: #004200;
 }
 
 /* Separator ("|") between icon and input box */
 
-.container1 .input-box p {
+.container .login-container .input-box p {
     position: absolute;
     left: 55px;
     top: 50%;
@@ -108,39 +104,39 @@ body {
 
 /* 'Remember Me' & 'Forgot Password?' wrapper */
 
-.container1 .remember-forgot {
+.container .login-container .remember-forgot {
     vertical-align: middle;
     font-size: 14px;
-    color: #f2ffe7;
+    color: #7ec063;
     position: relative;
     transform: translateY(12px);
 }
 
 /* 'Remember Me' checkbox */
 
-.container1 .remember-forgot label input {
+.container .login-container .remember-forgot label input {
     width: 15px;
     height: 15px;
     margin: 0;
     vertical-align: middle;
     transform: translate(-10px, -2px);
-    accent-color: #0f9400;
+    accent-color: #7ec063;
 }
 
 /* 'Forgot Password?' Hyperlink */
 
-.container1 a {
-    color: #f2ffe7;
+.container .login-container a {
+    color: #7ec063;
     font-size: 14px;
     margin-left: 97px;
 }
 
 /* 'Log in' button */
 
-.container1 button {
+.container .login-container button {
     display: flex;
-    background-color: #cafcb6;
-    color: #0f9400;
+    background-color: #7ec063;
+    color: #004200;
     font-size: 15px;
     padding: 13px 50px;
     margin: 0;
@@ -150,13 +146,13 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
     transform: translateY(50px);
 }
 
 /* User Icon (Inside 'Log in' Button) */
 
-.container1 button i {
+.container .login-container button i {
     vertical-align: middle;
     transform: translate(-5px, 5px);
     font-size: 12px;
@@ -164,9 +160,9 @@ body {
 
 /* Right box (Sign Up side) */
 
-.container2 {
-    background-color: #affa9d;
-    background: linear-gradient(to right, #affa9d, #a6fa84);
+.toggle-container {
+    background-color: #b38752;
+    background: linear-gradient(to right, #b38752, #9a6f3b);
     width: 600px;
     max-width: 100%;
     min-height: 650px;
@@ -181,7 +177,7 @@ body {
 
 /* Right box title */
 
-.container2 h1 {
+.toggle-container h1 {
     transform: translateX(25%);
     background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
     background-size: 200% 100%;
@@ -193,15 +189,15 @@ body {
 
 /* Subtitle */
 
-.container2 p {
+.toggle-container p {
     transform: translateY(30%);
-    color: #0f9d0d;
+    color: #2cc226;
 }
 
 /* 'Sign Up' Button */
 
-.container2 button {
-    background-color: #cafcb6;
+.toggle-container button {
+    background-color: #b38752;
     transform: translate(55%, 100%);
     font-size: 15px;
     padding: 13px 50px;

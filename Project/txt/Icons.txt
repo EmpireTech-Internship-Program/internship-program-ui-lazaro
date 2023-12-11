@@ -1,0 +1,5 @@
+https://fontawesome.com/icons/envelope?f=classic&s=solid - envelope
+https://fontawesome.com/icons/key?f=classic&s=solid - key
+https://fontawesome.com/icons/user?f=classic&s=solid - user
+https://fontawesome.com/icons/user-plus?f=classic&s=solid - user-plus
+https://fontawesome.com/icons/wrench?f=classic&s=solid - wrench
