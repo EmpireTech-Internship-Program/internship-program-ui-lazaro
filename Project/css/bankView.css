@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2e2fa;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    left: 300px;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px #324044;
+}
+
+.topbar .toggle {
+    margin: 20px 30px;
+}
+
+.topbar i {
+    color: #fd3c70;
+    font-size: 1.5rem;
+}
+
+.topbar .header-functions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 350px;
+    top: 20px;
+}
+
+.topbar .header-functions .notification-icon {
+    margin-right: 30px;
+}
+
+.topbar .header-functions .notification-icon:hover i,
+.aboutUs-icon:hover i {
+    color: #009df2;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #f2e2fa;
+    box-shadow: 0 0 20px #324044;
+    border-left: 20px solid #f2e2fa;
+    transition: 0.5;
+    overflow: hidden;
+}
+
+.navbar .logo img {
+    width: 190px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar ul li:nth-child(1) {
+    margin-top: 300px;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #fd3c70;
+}
+
+.navbar ul li a .icon {
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.navbar ul li a .icon i {
+    font-size: 1.75rem;
+}
+
+.navbar ul li a .title {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navbar ul li a:hover {
+    color: #009df2;
+}
+
+main {
+    position: absolute;
+    left: 300px;
+    top: 70px;
+}
+
+section {
+    margin: 80px 80px;
+}
+
+section h3 {
+    color: #fd3c70;
+}
