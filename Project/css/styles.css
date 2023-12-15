@@ -8,8 +8,7 @@
 }
 
 body {
-    background-color: #ffce95;
-    background: linear-gradient(to right, #f1b56f, #d6a56d);
+    background-color: #f2e2fa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,14 +23,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5e3a02;
-    background: linear-gradient(to right, #5e3a02, #4c2a00);
+    background-color: #009df2;
     width: 500px;
     max-width: 100%;
     min-height: 550px;
     border-radius: 5px 30px;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translate(-40%, 10%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
     z-index: 1;
 }
@@ -41,14 +39,16 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 /* Login title */
 
 .container .login-container h1 {
-    color: #2cc226;
+    color: #ffe600;
     display: flex;
     transform: translateY(-60px);
+    font-size: 35px;
 }
 
 /* Input box */
@@ -56,13 +56,13 @@ body {
 .container .login-container .input-box {
     position: relative;
     width: 380px;
-    padding: 25px;
+    padding: 15px;
     margin: 8px;
     border: 0;
     border-radius: 10px;
     outline: none;
-    background-color: #7ec063;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 rgb(31, 150, 31);
+    background-color: #f2e2fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 rgb(253, 60, 112);
     transform: translateY(-15px);
 }
 
@@ -78,7 +78,7 @@ body {
 
 .container .login-container input::placeholder {
     font-style: italic;
-    color: #0042006b;
+    color: #ff9db7;
 }
 
 /* Input box icons */
@@ -88,18 +88,18 @@ body {
     left: 20px;
     top: 50%;
     transform: translateY(-5px);
-    color: #004200;
+    color: #ff9900;
 }
 
 /* Separator ("|") between icon and input box */
 
 .container .login-container .input-box p {
     position: absolute;
-    left: 55px;
+    left: 50px;
     top: 50%;
     transform: translateY(-10px);
     font-size: 14px;
-    color: #0042004d;
+    color: #ff9db7;
 }
 
 /* 'Remember Me' & 'Forgot Password?' wrapper */
@@ -107,7 +107,7 @@ body {
 .container .login-container .remember-forgot {
     vertical-align: middle;
     font-size: 14px;
-    color: #7ec063;
+    color: #ff9db7;
     position: relative;
     transform: translateY(12px);
 }
@@ -120,13 +120,13 @@ body {
     margin: 0;
     vertical-align: middle;
     transform: translate(-10px, -2px);
-    accent-color: #7ec063;
+    accent-color: #ff9db7;
 }
 
 /* 'Forgot Password?' Hyperlink */
 
 .container .login-container a {
-    color: #7ec063;
+    color: #ff9db7;
     font-size: 14px;
     margin-left: 97px;
 }
@@ -135,8 +135,8 @@ body {
 
 .container .login-container button {
     display: flex;
-    background-color: #7ec063;
-    color: #004200;
+    background-color: #fd3c70;
+    color: #ffe600;
     font-size: 15px;
     padding: 13px 50px;
     margin: 0;
@@ -161,8 +161,7 @@ body {
 /* Right box (Sign Up side) */
 
 .toggle-container {
-    background-color: #b38752;
-    background: linear-gradient(to right, #b38752, #9a6f3b);
+    background-color: #fd3c70;
     width: 600px;
     max-width: 100%;
     min-height: 650px;
@@ -178,26 +177,23 @@ body {
 /* Right box title */
 
 .toggle-container h1 {
-    transform: translateX(25%);
-    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
-    background-size: 200% 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: colorMove 3s linear infinite;
+    color: #ffee00;
+    text-align: center;
+    font-size: 35px;
 }
 
 /* Subtitle */
 
 .toggle-container p {
     transform: translateY(30%);
-    color: #2cc226;
+    color: #ffe600;
 }
 
 /* 'Sign Up' Button */
 
 .toggle-container button {
-    background-color: #b38752;
+    background-color: #009df2;
+    color: #ffff00;
     transform: translate(55%, 100%);
     font-size: 15px;
     padding: 13px 50px;
@@ -208,24 +204,4 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
-    background: linear-gradient(to right, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00, #0f9d0d, #1eb01a, #2cc226, #3bd533, #2cc226, #1eb01a, #0f9d0d, #008a00);
-    background-size: 200% 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: colorMove 3s linear infinite;
-}
-
-/* Color gradient animation */
-
-@keyframes colorMove {
-    0% {
-        background-position: 0% 0;
-        color: transparent;
-    }
-
-    100% {
-        background-position: 100% 0;
-        color: transparent;
-    }
 }

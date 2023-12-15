@@ -1,15 +1,6 @@
-#e5ffcf - Pastel Green
-#cafcb6 - Tea Green
-#affa9d - Pale Tea Green
-#94f784 - Bright Lime Green
-#79f46b - Light Bright Lime Green
-#008a00 - Office Green
-#0f9d0d - Vibrant Green
-#1eb01a - Shamrock Green
-#2cc226 - Lime Green
-#3bd533 - Yellow-Green
-#004200 - Dark Forest Green
-#f1b56f - Apricot Gold
-#d6a56d - Caramel Tan
-#5e3a02 - Rustic Brown
-#4c2a00 - Mahogany Brown
+#fd3c70 - Pink
+#ffe600 - Yellow
+#009df2 - Blue
+#f2e2fa - White
+#ff9db7 - Light Pink
+#ff9900 - Gold
