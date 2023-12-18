@@ -28,7 +28,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -36,7 +35,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="../images/Empire Finance Network logos 4/Empire Finance Network-logos_transparent resized.png">
+                    <img src="../images/Empire Finance Network logos 4/Empire Finance Network-logos_transparent purple resized.png">
                 </div>
 
                 <ul>
@@ -57,15 +56,6 @@
                             <span class="title">Settings</span>
                         </a>
                     </li>
-
-                    <!-- <li>
-                        <a href="#">
-                            <span class="icon">
-                                <i class="fa-solid fa-circle-info"></i>
-                            </span>
-                            <span class="title">About us</span>
-                        </a>
-                    </li> -->
 
                     <li>
                         <a href="#">
@@ -93,13 +83,55 @@
     <main>
         <section>
             <div class="dashboard-container">
-                <h3>Banks</h3>
+                <span class="dashboard-title">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Banks</h3>
+                </span>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Agency</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>Account</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>People</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 
-                <div class="searchBar">
-                    <input type="text" name="search" placeholder="Search">
-                    <button class="searchButton">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <div class="dashboard-utilities">
+                    <div class="searchBar">
+                        <input type="text" name="search" placeholder="Search">
+                        <button class="searchButton">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdownMenu">
+                        <select id="sortDropdown">
+                            <option disabled selected>Sort by</option>
+                            <option>Name</option>
+                            <option>Data Added</option>
+                        </select>
+                    </div>
+
+                    <div class="refreshButton">
+                        <button>
+                            <i class="fa-solid fa-rotate-right"></i>
+                            Refresh
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

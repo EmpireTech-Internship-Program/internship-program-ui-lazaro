@@ -15,10 +15,10 @@ body {
 
 header {
     position: absolute;
-    left: 300px;
+    left: 240px;
     width: 100%;
     height: 70px;
-    box-shadow: 0 0 20px #324044;
+    box-shadow: 0 0 10px #324044;
 }
 
 .topbar .toggle {
@@ -26,7 +26,7 @@ header {
 }
 
 .topbar i {
-    color: #fd3c70;
+    color: #410279;
     font-size: 1.5rem;
 }
 
@@ -35,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 350px;
+    right: 280px;
     top: 20px;
 }
 
@@ -45,7 +45,7 @@ header {
 
 .topbar .header-functions .notification-icon:hover i,
 .aboutUs-icon:hover i {
-    color: #009df2;
+    color: #fd3c70;
 }
 
 .container {
@@ -55,22 +55,21 @@ header {
 
 .navbar {
     position: fixed;
-    width: 300px;
+    width: 240px;
     height: 100%;
-    background: #f2e2fa;
-    box-shadow: 0 0 20px #324044;
-    border-left: 20px solid #f2e2fa;
+    background: #d0ffff;
+    box-shadow: 0 0 10px #324044;
     transition: 0.5;
     overflow: hidden;
 }
 
 .navbar .logo img {
-    width: 190px;
+    width: 150px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px;
+    margin: 25px 40px;
 }
 
 .navbar ul {
@@ -84,6 +83,7 @@ header {
     position: relative;
     width: 100%;
     list-style: none;
+    margin-left: 20px;
 }
 
 .navbar ul li:nth-child(1) {
@@ -95,19 +95,15 @@ header {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: #fd3c70;
+    color: #410279;
 }
 
 .navbar ul li a .icon {
     position: relative;
     display: inline-block;
-    min-width: 60px;
+    min-width: 40px;
     height: 60px;
     line-height: 60px;
-}
-
-.navbar ul li a .icon i {
-    font-size: 1.75rem;
 }
 
 .navbar ul li a .title {
@@ -118,22 +114,125 @@ header {
     line-height: 60px;
     text-align: start;
     white-space: nowrap;
+    font-size: 15px;
 }
 
 .navbar ul li a:hover {
-    color: #009df2;
+    color: #fd3c70;
 }
 
 main {
     position: absolute;
-    left: 300px;
+    left: 240px;
     top: 70px;
+    width: 100%;
+    min-height: 100%;
 }
 
 section {
     margin: 80px 80px;
 }
 
-section h3 {
+.dashboard-container .dashboard-title {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .dashboard-title i {
+    color: #410279;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.dashboard-container .dashboard-title h3 {
     color: #fd3c70;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+section nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+    list-style: none;
+    margin: 50px 0;
+}
+
+section nav ul li a {
+    color: #410279;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+section nav ul li a:hover {
+    color: #fd3c70;
+}
+
+section .dashboard-utilities {
+    display: flex;
+    align-items: center;
+}
+
+section .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #e2fcfc;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #3240443f;
+    margin-right: 40px;
+}
+
+section .searchBar input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 10px;
+}
+
+section .searchBar input::placeholder {
+    color: #cf94fd;
+    font-style: italic;
+}
+
+section .searchBar button {
+    border-radius: 0 10px 10px 0;
+    width: 70px;
+    height: 30px;
+    vertical-align: middle;
+    border: 1px solid #32404463;
+    color: #410279;
+    background-color: #d0ffff;
+    cursor: pointer;
+}
+
+section .dropdownMenu {
+    margin-right: 40px;
+}
+
+section .dropdownMenu select {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #32404463;
+    color: #410279;
+    background-color: #e2fcfc;
+    outline: none;
+}
+
+section .refreshButton button {
+    background-color: #410279;
+    color: #00e1ff;
+    font-size: 13px;
+    border-radius: 16px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 10px #32404463;
+    transition: 0.5s;
+}
+
+section .refreshButton button:hover {
+    box-shadow: 0 0 10px #00e1ff;
 }

@@ -1,6 +1,6 @@
 #fd3c70 - Pink
-#ffe600 - Yellow
-#009df2 - Blue
-#f2e2fa - White
-#ff9db7 - Light Pink
-#ff9900 - Gold
+#410279 - Purple
+#cf94fd - Light Purple
+#00e1ff - Blue
+#d0ffff - Light Blue
+#efd1fd
