@@ -1,6 +1,0 @@
-#fd3c70 - Pink
-#410279 - Purple
-#cf94fd - Light Purple
-#00e1ff - Blue
-#d0ffff - Light Blue
-#efd1fd
