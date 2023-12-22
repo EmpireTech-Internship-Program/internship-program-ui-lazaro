@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --pink: #fd3c70;
-    --purple: #410279;
-    --lavanda: #cf94fd;
-    --cyan: #00e1ff;
-    --lightCyan: #d0ffff;
-    --palePink: #f2e2fa;
-    --paleTurquoise: #e2fcfc;
-    --lightRose: #ff9db7;
+    --teal: #113946;
+    --tan: #BCA37F;
+    --brown: #3F2305;
+    --wheat: #DFD7BF;
+    --lightBeige: #f3e5c8;
+    --peach: #EAD7BB;
 }
 
 * {
@@ -19,7 +17,7 @@
 }
 
 body {
-    background-color: var(--palePink);
+    background-color: var(--lightBeige);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,15 +32,16 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--purple);
+    background-color: var(--tan);
     width: 500px;
-    max-width: 100%;
+    max-width: 90%;
     min-height: 550px;
     border-radius: 5px 30px;
     position: absolute;
     transform: translate(-40%, 10%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
-    z-index: 1;
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
 }
 
 .container .login-container form {
@@ -56,7 +55,7 @@ body {
 /* Login title */
 
 .container .login-container h1 {
-    color: var(--pink);
+    color: var(--brown);
     display: flex;
     transform: translateY(-60px);
     font-size: 35px;
@@ -72,8 +71,8 @@ body {
     border: 0;
     border-radius: 10px;
     outline: none;
-    background-color: var(--lightCyan);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 rgb(253, 60, 112);
+    background-color: var(--wheat);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 var(--brown);
     transform: translateY(-15px);
 }
 
@@ -89,7 +88,7 @@ body {
 
 .container .login-container input::placeholder {
     font-style: italic;
-    color: var(--lavanda);
+    color: var(--tan);
 }
 
 /* Input box icons */
@@ -99,7 +98,7 @@ body {
     left: 20px;
     top: 50%;
     transform: translateY(-5px);
-    color: var(--purple);
+    color: var(--tan);
 }
 
 /* Separator ("|") between icon and input box */
@@ -110,7 +109,7 @@ body {
     top: 50%;
     transform: translateY(-10px);
     font-size: 14px;
-    color: var(--lightRose);
+    color: var(--tan);
 }
 
 /* 'Remember Me' & 'Forgot Password?' wrapper */
@@ -118,7 +117,7 @@ body {
 .container .login-container .remember-forgot {
     vertical-align: middle;
     font-size: 14px;
-    color: var(--lightRose);
+    color: var(--peach);
     position: relative;
     transform: translateY(12px);
 }
@@ -131,13 +130,13 @@ body {
     margin: 0;
     vertical-align: middle;
     transform: translate(-10px, -2px);
-    accent-color: var(--pink);
+    accent-color: var(--brown);
 }
 
 /* 'Forgot Password?' Hyperlink */
 
 .container .login-container a {
-    color: var(--lightRose);
+    color: var(--peach);
     font-size: 14px;
     margin-left: 97px;
 }
@@ -146,8 +145,8 @@ body {
 
 .container .login-container button {
     display: flex;
-    background-color: var(--pink);
-    color: var(--purple);
+    background-color: var(--brown);
+    color: var(--peach);
     font-size: 15px;
     padding: 13px 50px;
     margin: 0;
@@ -172,7 +171,7 @@ body {
 /* Right box (Sign Up side) */
 
 .toggle-container {
-    background-color: var(--pink);
+    background-color: var(--teal);
     width: 600px;
     max-width: 100%;
     min-height: 650px;
@@ -182,13 +181,14 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
-    z-index: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 1;
 }
 
 /* Right box title */
 
 .toggle-container h1 {
-    color: var(--purple);
+    color: var(--tan);
     text-align: center;
     font-size: 35px;
 }
@@ -197,14 +197,14 @@ body {
 
 .toggle-container p {
     transform: translateY(30%);
-    color: var(--purple);
+    color: var(--tan);
 }
 
 /* 'Sign Up' Button */
 
 .toggle-container button {
-    background-color: var(--purple);
-    color: var(--cyan);
+    background-color: var(--tan);
+    color: var(--brown);
     transform: translate(55%, 100%);
     font-size: 15px;
     padding: 13px 50px;
@@ -215,4 +215,252 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
+}
+
+.hidden-container {
+    background-color: var(--teal);
+    width: 600px;
+    max-width: 100%;
+    min-height: 650px;
+    border-radius: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.hidden-container .signUp-container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden-container .signUp-container h1 {
+    color: var(--tan);
+    display: flex;
+    transform: translateY(-60px);
+    font-size: 35px;
+}
+
+.hidden-container .login-return i {
+    cursor: pointer;
+}
+
+.hidden-container .signUp-container .input-box {
+    position: relative;
+    width: 480px;
+    padding: 15px;
+    margin: 8px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--peach);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 var(--tan);
+    transform: translateY(-15px);
+}
+
+.hidden-container .signUp-container input {
+    width: 400px;
+    margin: 8px 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.hidden-container .signUp-container input::placeholder {
+    font-style: italic;
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-5px);
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container p {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-10px);
+    font-size: 14px;
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container .rememberMe-checkbox {
+    vertical-align: middle;
+    font-size: 14px;
+    color: var(--tan);
+    position: relative;
+    transform: translateY(12px);
+    margin-right: 65%;
+}
+
+.hidden-container .signUp-container .rememberMe-checkbox label input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    transform: translate(-10px, -2px);
+    vertical-align: middle;
+    accent-color: var(--tan);
+}
+
+.hidden-container .signUp-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--tan);
+    color: var(--brown);
+    font-size: 15px;
+    padding: 13px 50px;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
+    transform: translateY(50px);
+}
+
+/* Animations */
+
+@keyframes fadeOutSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+
+    25% {
+        opacity: 0.5;
+        z-index: 3;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 0.90;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 3;
+    }
+}
+
+@keyframes hideSlideLeftToCenter {
+    0% {
+        transform: translate(-40%, 10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hideSlideRightToCenter {
+    0% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes backSlideHiddenToRight {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(40%);
+    }
+}
+
+@keyframes backSlideHiddenToLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-40%, 10%);
+        z-index: 2;
+    }
+}
+
+@keyframes hideSlide {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 5;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    80% {
+        opacity: 0.15;
+    }
+
+    90% {
+        opacity: 0.05;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(40%);
+        z-index: 0;
+    }
 }

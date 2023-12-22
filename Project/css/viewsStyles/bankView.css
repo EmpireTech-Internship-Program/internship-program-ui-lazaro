@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --pink: #fd3c70;
-    --purple: #410279;
-    --lavanda: #cf94fd;
-    --cyan: #00e1ff;
-    --lightCyan: #d0ffff;
-    --palePink: #f2e2fa;
-    --paleTurquoise: #e2fcfc;
-    --lightRose: #ff9db7;
+    --teal: #113946;
+    --tan: #BCA37F;
+    --brown: #3F2305;
+    --wheat: #DFD7BF;
+    --lightBeige: #f3e5c8;
+    --peach: #EAD7BB;
 }
 
 * {
@@ -19,7 +17,7 @@
 }
 
 body {
-    background-color: var(--palePink);
+    background-color: var(--lightBeige);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -37,12 +35,13 @@ header {
 }
 
 .topbar i {
-    color: var(--purple);
+    color: var(--tan);
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .topbar .toggle i:hover {
-    color: var(--pink);
+    color: var(--teal);
 }
 
 .topbar .header-functions {
@@ -60,7 +59,7 @@ header {
 
 .topbar .header-functions .notification-icon:hover i,
 .aboutUs-icon:hover i {
-    color: var(--pink);
+    color: var(--teal);
 }
 
 .container {
@@ -72,7 +71,7 @@ header {
     position: fixed;
     width: 240px;
     height: 100%;
-    background: var(--lightCyan);
+    background: var(--wheat);
     box-shadow: 0 0 10px rgb(50, 64, 68);
     transition: 0.5;
     overflow: hidden;
@@ -110,7 +109,7 @@ header {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: var(--purple);
+    color: var(--brown);
 }
 
 .navbar ul li a .icon {
@@ -133,7 +132,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: var(--pink);
+    color: var(--tan);
 }
 
 main {
@@ -154,13 +153,13 @@ section {
 }
 
 .dashboard-container .dashboard-title i {
-    color: var(--purple);
+    color: var(--tan);
     font-size: 18px;
     vertical-align: middle;
 }
 
 .dashboard-container .dashboard-title h3 {
-    color: var(--pink);
+    color: var(--teal);
     font-size: 30px;
     margin-left: 10px;
 }
@@ -174,13 +173,13 @@ section nav ul {
 }
 
 section nav ul li a {
-    color: var(--purple);
+    color: var(--brown);
     text-decoration: none;
     font-size: 14px;
 }
 
 section nav ul li a:hover {
-    color: var(--pink);
+    color: var(--tan);
 }
 
 section .dashboard-utilities {
@@ -191,7 +190,7 @@ section .dashboard-utilities {
 section .searchBar {
     display: flex;
     align-items: center;
-    background-color: var(--paleTurquoise);
+    background-color: var(--peach);
     width: 200px;
     height: 30px;
     border-radius: 10px;
@@ -207,7 +206,7 @@ section .searchBar input {
 }
 
 section .searchBar input::placeholder {
-    color: var(--lavanda);
+    color: var(--tan);
     font-style: italic;
 }
 
@@ -217,8 +216,8 @@ section .searchBar button {
     height: 30px;
     vertical-align: middle;
     border: 1px solid rgba(50, 64, 68, 0.388);
-    color: var(--purple);
-    background-color: var(--lightCyan);
+    color: var(--brown);
+    background-color: var(--wheat);
     cursor: pointer;
 }
 
@@ -231,14 +230,14 @@ section .dropdownMenu select {
     height: 30px;
     border-radius: 10px;
     border: 1px solid rgba(50, 64, 68, 0.388);
-    color: var(--purple);
-    background-color: var(--paleTurquoise);
+    color: var(--tan);
+    background-color: var(--peach);
     outline: none;
 }
 
 section .refreshButton button {
-    background-color: var(--purple);
-    color: var(--cyan);
+    background-color: var(--tan);
+    color: var(--peach);
     font-size: 13px;
     border-radius: 16px;
     border: 0;
@@ -249,6 +248,42 @@ section .refreshButton button {
     transition: 0.5s;
 }
 
-section .refreshButton button:hover {
-    box-shadow: 0 0 10px var(--cyan);
+section .refreshButton button:hover i {
+    animation: rotate 0.6s ease-in;
+}
+
+.listDashboard ul {
+    list-style: none;
+}
+
+.listDashboard ul li .listBox {
+    background-color: var(--wheat);
+    width: 100%;
+    max-width: 85%;
+    height: 70px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.listDashboard ul:nth-child(1) {
+    margin-top: 100px;
+}
+
+.listDashboard ul li:nth-child(1) .listBox {
+    margin-top: 5px;
+}
+
+.listDashboard .listDashboardColumnTitles ul {
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

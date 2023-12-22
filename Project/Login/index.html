@@ -14,17 +14,17 @@
     
     <main>
         <section>
-            <div class="container">
-                <div class="login-container">
+            <div class="container" id="container">
+                <div class="form-container login-container toggle-left">
                     <form>
                         <h1>Login Please</h1>
                         <div class="input-box">
-                            <input type="text" name="userId-email" placeholder="Input your user ID or Email">
+                            <input type="text" name="userId-email" placeholder="Input your user ID or Email" required>
                             <i class="fa-solid fa-envelope"></i>
                             <p>|</p>
                         </div>
                         <div class="input-box">
-                            <input type="password" name="password" placeholder="Input your password">
+                            <input type="password" name="password" placeholder="Input your password" required>
                             <i class="fa-solid fa-key"></i>
                             <p>|</p>
                         </div>
@@ -37,26 +37,74 @@
                             <a href="../Login/index_recovery.html">Forgot Password?</a>
                         </div>
                         <button type="submit">
-                            <i class="fa-solid fa-user"></i><span></span>
+                            <i class="fa-solid fa-user"></i>
                             Log in
                         </button>
                     </form>
                 </div>
             </div>
+
+            <div class="hidden-container" id="hidden-container">
+                <div class="signUp-container toggle-front">
+                    <div class="form-container sign-up">
+                        <form>
+                            <h1>Create Account</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="UserID" required>
+                                <i class="fa-solid fa-user"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" required>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class="fa-solid fa-key"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" placeholder="Confirm Password" required>
+                                <i class="fa-solid fa-key"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="rememberMe-checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkbox">
+                                    Remember Me
+                                </label>
+                            </div>
+
+                            <div class="login-return">
+                                <i class="fa-solid fa-arrow-left" id="login-return" onclick="loginReturn()"></i>
+                            </div>
+
+                            <button type="submit">
+                                Sign up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
-            <div class="toggle-container" id="container">
-                <div class="signUp-container">
+            <div class="toggle-container" id="toggle-container">
+                <div class="toggle-panel toggle-behind">
                     <h1>Welcome!</h1>
                     <p>Enter your details and start a journey with us</p>
-                    <button>Sign Up</button>
+                    <button id="signUp-button" onclick="showHiddenContainer()">Sign Up</button>
                 </div>
             </div>
         </section>
     </main>
     
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 
