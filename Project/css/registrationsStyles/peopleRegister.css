@@ -123,7 +123,9 @@ section {
 }
 
 .confirm-cancel-buttons {
-    margin: 100px 0 0 600px;
+    margin-top: 100px;
+    position: relative;
+    left: 90%;
 }
 
 .confirm-cancel-buttons button {

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/listsStyles/accountList.css">
+    <title>Account - Empire Finance Network</title>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="header-functions">
+                <div class="theme-icon">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+
+                <div class="aboutUs-icon">
+                    <a href="https://github.com/LazVeiga">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../../images/Empire_Finance_Network_logos_4/Empire_Finance_Network-logos_transparent_vintage_resized.png">
+                </div>
+
+                <div class="profile">
+                    <img src="../../images/Profile_Template_Pic/profile_template_woman_pic.jpg">
+                    <span>Fake Profile</span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/558281710710/?text=Support">
+                            <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            <span class="title">Support</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../Login/index.html">
+                            <span class="icon">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </span>
+                            <span class="title">Sign out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="dashboard-container">
+                <span class="dashboard-title">
+                    <i class="fa-solid fa-id-badge"></i>
+                    <h3>Accounts</h3>
+                </span>
+
+                <div class="listNavigation">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../views/bankList.html">
+                                    <span>Bank</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/agencyList.html">
+                                    <span>Agency</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span>Account</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/peopleList.html">
+                                    <span>People</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="dashboard-utilities">
+                    <div class="searchBar">
+                        <input type="text" name="search" placeholder="Search">
+                        <button class="searchButton">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdownMenu">
+                        <select id="sortDropdown">
+                            <option disabled selected>Sort by</option>
+                            <option>Name</option>
+                            <option>Latest Added</option>
+                        </select>
+                    </div>
+
+                    <div class="refreshButton">
+                        <button>
+                            <i class="fa-solid fa-rotate-right"></i>
+                            Refresh
+                        </button>
+                    </div>
+
+                    <div class="addButton">
+                        <a href="../registrations/accountRegister.html">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                                Add Account
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="listDashboard">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Agency_ID</th>
+                                <th>Account Type</th>
+                                <th>Opening Balance</th>
+                                <th>Account Holder</th>
+                                <th>Opening Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#</td>
+                                <td>Checking Account</td>
+                                <td>BRL</td>
+                                <td>Gabriela Oliveira</td>
+                                <td>mm/dd/yyyy</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#</td>
+                                <td>Salary Account</td>
+                                <td>BRL</td>
+                                <td>Leonardo Pereira</td>
+                                <td>mm/dd/yyyy</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#</td>
+                                <td>Joint Account</td>
+                                <td>BRL</td>
+                                <td>Isabela Mendes</td>
+                                <td>mm/dd/yyyy</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#</td>
+                                <td>Payment Account</td>
+                                <td>BRL</td>
+                                <td>Camila Costa</td>
+                                <td>mm/dd/yyyy</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#</td>
+                                <td>Financial Investments</td>
+                                <td>BRL</td>
+                                <td>Ricardo Santos</td>
+                                <td>mm/dd/yyyy</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../js/listsScripts/accountList.js"></script>
+
+</body>
+</html>

@@ -12,17 +12,17 @@
     <header>
         <div class="topbar">
             <div class="toggle">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="sideBarMenu" onclick="menuToggle()"></i>
             </div>
 
             <div class="header-functions">
-                <div class="notification-icon">
+                <div class="theme-icon">
                     <i class="fa-solid fa-moon"></i>
                 </div>
 
                 <div class="aboutUs-icon">
-                    <a href="#">
-                        <i class="fa-regular fa-circle-question"></i>
+                    <a href="https://github.com/LazVeiga">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
             </div>
@@ -36,6 +36,13 @@
                     <img src="../../images/Empire_Finance_Network_logos_4/Empire_Finance_Network-logos_transparent_vintage_resized.png">
                 </div>
 
+                <div class="profile">
+                    <a href="../user/profileSettings.html">
+                        <img src="../../images/Profile_Template_Pic/profile_template_woman_pic.jpg">
+                    </a>
+                    <span>Fake Profile</span>
+                </div>
+
                 <ul>
                     <li>
                         <a href="#">
@@ -47,9 +54,9 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="https://wa.me/558281710710/?text=Support">
                             <span class="icon">
-                                <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
                             </span>
                             <span class="title">Support</span>
                         </a>
@@ -63,7 +70,6 @@
                             <span class="title">Sign out</span>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -77,27 +83,35 @@
                     <h3>Banks</h3>
                 </span>
 
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../listDashboards/agencyList.html">
-                                <span>Agency</span>
-                            </a>
-                        </li>
+                <div class="listNavigation">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Bank</span>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="../listDashboards/accountList.html">
-                                <span>Account</span>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="../views/agencyList.html">
+                                    <span>Agency</span>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="../listDashboards/peopleList.html">
-                                <span>People</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                            <li>
+                                <a href="../views/accountList.html">
+                                    <span>Account</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/peopleList.html">
+                                    <span>People</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 
                 <div class="dashboard-utilities">
                     <div class="searchBar">
@@ -111,7 +125,7 @@
                         <select id="sortDropdown">
                             <option disabled selected>Sort by</option>
                             <option>Name</option>
-                            <option>Data Added</option>
+                            <option>Latest Added</option>
                         </select>
                     </div>
 
@@ -121,63 +135,84 @@
                             Refresh
                         </button>
                     </div>
+
+                    <div class="addButton">
+                        <a href="../registrations/bankRegister.html">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                                Add Bank
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="listDashboard">
-                    <div class="listDashboardColumnTitles">
-                        <ul>
-                            <li>
-                                <span>Bank ID</span>
-                            </li>
-                            
-                            <li>
-                                <span>Bank Name</span>
-                            </li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bank Name</th>
+                                <th>Bank ID Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Brazilian Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
 
-                            
-                        </ul>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="listBox">
-                                
-                            </div>
-                        </li>
+                            <tr>
+                                <td>GuBank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
 
-                        <li>
-                            <div class="listBox">
+                            <tr>
+                                <td>Moonbank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
 
-                            </div>
-                        </li>
+                            <tr>
+                                <td>Polar Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
 
-                        <li>
-                            <div class="listBox">
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="listBox">
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="listBox">
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="listBox">
-
-                            </div>
-                        </li>
-                    </ul>
+                            <tr>
+                                <td>JJJ Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="../../js/listsScripts/bankList.js"></script>
 
 </body>
 </html>

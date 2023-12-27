@@ -68,9 +68,9 @@ header {
 
 main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 
@@ -94,6 +94,10 @@ section {
     color: var(--teal);
 }
 
+.fullname, .birth, .cpf, .address, .phoneNumber, .email {
+    margin-right: 20px;
+}
+
 .wrapper form input {
     padding: 7px;
     margin-bottom: 10px;
@@ -102,73 +106,18 @@ section {
     background-color: var(--peach);
 }
 
-input::placeholder {
-    color: var(--tan);
-    font-style: italic;
+.fullname input, .email input {
+    width: 500px;
 }
 
-.accountType, .accountNumber, .openingBalance, .accountHolder, .openingDate {
-    margin-right: 20px;
-}
-
-.accountType input, .openingBalance input, .openingDate input {
+.birth input[type="date"] {
     width: 200px;
 }
 
-.accountNumber input {
+.cpf input, .phoneNumber input {
     width: 300px;
 }
 
-.accountHolder input {
-    width: 400px;
-}
-
-.accountType select {
-    width: 200px;
-    padding: 7px;
-    border: 1px solid rgba(119, 104, 71, 0.459);
-    color: var(--brown);
-    background-color: var(--peach);
-    outline: none;
-}
-
-select .dropdownHolder {
-    color: var(--tan);
-}
-
-.openingDate input[type="date"] {
-    width: 200px;
-    padding: 7px;
-    border: 1px solid rgba(119, 104, 71, 0.459);
-    color: var(--tan);
-    background-color: var(--peach);
-    outline: none;
-}
-
-.confirm-cancel-buttons {
-    margin-top: 100px;
-    position: relative;
-    left: 5%;
-}
-
-.confirm-cancel-buttons button {
-    cursor: pointer;
-}
-
-.confirm-cancel-buttons .cancel {
-    background-color: var(--tan);
-    color: var(--peach);
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-}
-
-.confirm-cancel-buttons .save {
-    background-color: var(--brown);
-    color: var(--peach);
-    width: 60px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
+.address input {
+    width: 700px;
 }

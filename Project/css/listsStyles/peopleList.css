@@ -313,7 +313,8 @@ table {
 
 .listDashboard tbody td {
     border-radius: 7px;
-    padding-left: 30px;
+    width: 500px;
+    padding-left: 10px;
 }
 
 .listDashboard tbody td i {
@@ -321,7 +322,7 @@ table {
     align-items: center;
     padding-left: 20px;
     position: relative;
-    left: 170px;
+    left: 15px;
     cursor: pointer;
 }
 
@@ -333,14 +334,5 @@ table {
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes slide {
-    from {
-        left: 280px;
-    }
-    to {
-        left: 0;
     }
 }

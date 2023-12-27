@@ -144,31 +144,3 @@ select .dropdownHolder {
     background-color: var(--peach);
     outline: none;
 }
-
-.confirm-cancel-buttons {
-    margin-top: 100px;
-    position: relative;
-    left: 5%;
-}
-
-.confirm-cancel-buttons button {
-    cursor: pointer;
-}
-
-.confirm-cancel-buttons .cancel {
-    background-color: var(--tan);
-    color: var(--peach);
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-}
-
-.confirm-cancel-buttons .save {
-    background-color: var(--brown);
-    color: var(--peach);
-    width: 60px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-}

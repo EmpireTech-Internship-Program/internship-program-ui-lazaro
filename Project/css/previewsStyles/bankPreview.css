@@ -88,87 +88,21 @@ section {
     flex-wrap: wrap;
 }
 
-.wrapper form label {
+.bankName label, .bankId label {
     display: flex;
     flex-direction: column;
     color: var(--teal);
 }
 
-.wrapper form input {
+.bankName, .bankId {
+    margin-right: 20px;
+}
+
+.bankName input, .bankId input {
+    width: 500px;
     padding: 7px;
     margin-bottom: 10px;
     outline: none;
     border: 1px solid rgba(119, 104, 71, 0.459);
     background-color: var(--peach);
-}
-
-input::placeholder {
-    color: var(--tan);
-    font-style: italic;
-}
-
-.accountType, .accountNumber, .openingBalance, .accountHolder, .openingDate {
-    margin-right: 20px;
-}
-
-.accountType input, .openingBalance input, .openingDate input {
-    width: 200px;
-}
-
-.accountNumber input {
-    width: 300px;
-}
-
-.accountHolder input {
-    width: 400px;
-}
-
-.accountType select {
-    width: 200px;
-    padding: 7px;
-    border: 1px solid rgba(119, 104, 71, 0.459);
-    color: var(--brown);
-    background-color: var(--peach);
-    outline: none;
-}
-
-select .dropdownHolder {
-    color: var(--tan);
-}
-
-.openingDate input[type="date"] {
-    width: 200px;
-    padding: 7px;
-    border: 1px solid rgba(119, 104, 71, 0.459);
-    color: var(--tan);
-    background-color: var(--peach);
-    outline: none;
-}
-
-.confirm-cancel-buttons {
-    margin-top: 100px;
-    position: relative;
-    left: 5%;
-}
-
-.confirm-cancel-buttons button {
-    cursor: pointer;
-}
-
-.confirm-cancel-buttons .cancel {
-    background-color: var(--tan);
-    color: var(--peach);
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-}
-
-.confirm-cancel-buttons .save {
-    background-color: var(--brown);
-    color: var(--peach);
-    width: 60px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
 }

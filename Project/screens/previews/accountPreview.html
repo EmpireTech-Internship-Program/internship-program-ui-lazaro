@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/previewsStyles/accountPreview.css">
+    <title>Account Register - Empire Finance Network</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="title">
+                <h4>Preview</h4>
+                <h1>Account</h1>
+            </div>
+
+            <div class="return-button">
+                <a href="../views/accountList.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <form>
+                    <div class="accountType">
+                        <label><strong>Account Type *</strong></label>
+                        <select id="accountTypeDropdown" disabled>
+                            <option>Checking Account</option>
+                            <option>Savings Account</option>
+                            <option>Salary Account</option>
+                            <option>Joint Account</option>
+                            <option>Financial Investments</option>
+                            <option>Payment Account</option>
+                        </select>
+                    </div>
+
+                    <div class="accountNumber">
+                        <label><strong>Account Number *</strong></label>
+                        <input type="text" disabled>
+                    </div>
+
+                    <div class="accountHolder">
+                        <label><strong>Account Holder *</strong></label>
+                        <input type="text" disabled>
+                    </div>
+                    
+                    <div class="openingBalance">
+                        <label><strong>Opening Balance *</strong></label>
+                        <input type="text" placeholder="BRL" disabled>
+                    </div>
+
+                    <div class="openingDate">
+                        <label><strong>Opening Date *</strong></label>
+                        <input type="date" disabled>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
