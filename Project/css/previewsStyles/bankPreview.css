@@ -106,3 +106,29 @@ section {
     border: 1px solid rgba(119, 104, 71, 0.459);
     background-color: var(--peach);
 }
+
+@media screen and (max-width: 1800px) {
+    section {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        padding: 60px 90px;
+    }
+
+    .bankName input, .bankId input {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section {
+        padding: 30px;
+    }
+
+    .bankName input, .bankId input {
+        width: 320px;
+    }
+}

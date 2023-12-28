@@ -34,10 +34,19 @@ body {
     color: var(--brown);
 }
 
-#return {
-    margin-right: 100%;
-    cursor: pointer;
+#returnButton {
+    display: inline-block;
+    text-decoration: none;
+    transform: translateX(-250px);
     color: var(--brown);
+}
+
+#returnButton i {
+    cursor: pointer;
+}
+
+#returnButton:hover {
+    color: var(--peach);
 }
 
 .container h1 {
@@ -68,7 +77,33 @@ body {
     display: none;
 }
 
-#updateImage {
-    margin-left: 90%;
+.confirmUpdate {
+    margin-top: 20px;
     cursor: pointer;
+    background-color: var(--peach);
+    color: var(--brown);
+    border: 1px solid var(--wheat);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.confirmUpdate:hover {
+    border: 1px solid var(--brown);
+    color: var(--teal);
+}
+
+@media screen and (max-width: 610px) {
+    .container {
+        background-color: var(--tan);
+        width: 350px;
+    }
+
+    .container label {
+        margin-left: 40px;
+    }
+
+    #returnButton {
+        transform: translateX(-130px);
+    }
 }

@@ -121,3 +121,29 @@ section {
 .address input {
     width: 700px;
 }
+
+@media screen and (max-width: 1800px) {
+    section {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        padding: 60px 90px;
+    }
+
+    .fullname input, .email input {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section {
+        padding: 30px;
+    }
+
+    .fullname input, .email input, .birth input, .cpf input, .phoneNumber input, .address input {
+        width: 320px;
+    }
+}

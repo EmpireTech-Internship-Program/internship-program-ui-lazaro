@@ -144,3 +144,29 @@ select .dropdownHolder {
     background-color: var(--peach);
     outline: none;
 }
+
+@media screen and (max-width: 1800px) {
+    section {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        padding: 60px 90px;
+    }
+
+    .accountType input, .openingDate input {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section {
+        padding: 30px;
+    }
+
+    .accountHolder input {
+        width: 320px;
+    }
+}

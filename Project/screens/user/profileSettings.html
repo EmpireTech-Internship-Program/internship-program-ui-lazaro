@@ -16,14 +16,22 @@
         <section>
             <form>
                 <div class="container">
-                    <a href="../views/bankList.html">
-                        <i class="fa-solid fa-xmark" id="return"></i>
-                    </a>
+                    <span class="returnIcon">
+                        <a href="#" id="returnLink">
+                            <i class="fa-solid fa-xmark" id="returnButton"></i>
+                        </a>
+                    </span>
+
                     <h1>Fake Profile</h1>
+
                     <img src="../../images/Profile_Template_Pic/profile.png" id="profilePic">
+
                     <label for="input-file">Upload Image</label>
-                    <input type="file" accept="image/png, image/jpeg, image/jpg" id="input-file">
-                    <i class="fa-solid fa-check" id="updateImage"></i>
+
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" id="input-file" required>
+                    <button type="submit" class="confirmUpdate">
+                        <i class="fa-solid fa-check" id="updateImage"></i>
+                    </button>
                 </div>
             </form>
         </section>

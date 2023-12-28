@@ -3,6 +3,7 @@ const closeSideBarMenu = document.getElementById('closeSideBarMenu');
 const sideBar = document.getElementById('sideBar');
 const header = document.getElementById('header');
 const preview = document.querySelectorAll('.preview');
+const edit = document.querySelectorAll('.edit');
 
 function closeMenu() {
     header.style.animation = 'slide 0.5s ease';
@@ -41,5 +42,11 @@ function openMenu() {
 preview.forEach(preview => {
     preview.addEventListener('click', function () {
         window.location.href = '../../screens/previews/bankPreview.html';
+    });
+});
+
+edit.forEach(edit => {
+    edit.addEventListener('click', function () {
+        window.location.href = '../../screens/listsEdit/bankListEdit.html';
     });
 });
