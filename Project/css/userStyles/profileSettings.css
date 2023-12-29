@@ -32,6 +32,7 @@ body {
     padding: 40px;
     text-align: center;
     color: var(--brown);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
 }
 
 #returnButton {
@@ -51,6 +52,14 @@ body {
 
 .container h1 {
     font-weight: 700;
+}
+
+.userIdEditor input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--peach);
+    height: 28px;
 }
 
 .container img {
@@ -73,9 +82,10 @@ body {
     margin-left: 160px;
 }
 
-.container input {
+.container input[type="file"] {
     display: none;
 }
+
 
 .confirmUpdate {
     margin-top: 20px;

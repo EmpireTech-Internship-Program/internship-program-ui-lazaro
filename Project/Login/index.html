@@ -17,12 +17,12 @@
         <section>
             <div class="container" id="container">
                 <div class="form-container login-container toggle-left">
-                    <form>
+                    <form onsubmit="approveLogin()">
                         <h1>Login Please</h1>
 
                         <div class="mobileSignUpRedirect">
                             <p>Not a member yet?</p>
-                            <div class="mobileSignUpRedirectButton" id="mobileSignUpRedirect">
+                            <div class="mobileSignUpRedirectButton" id="mobileSignUpRedirector" onclick="mobileSignUpRedirect()">
                                 <i class="fa-solid fa-user-plus"></i>
                                 <label>Sign up</label>
                             </div>
@@ -94,6 +94,7 @@
 
                             <div class="login-return">
                                 <i class="fa-solid fa-arrow-left" id="login-return" onclick="loginReturn()"></i>
+                                <i class="fa-solid fa-arrow-left loginReturnMobileButton" id="login-returnMobileButton" onclick="loginReturnMobile()"></i>
                             </div>
 
                             <button type="submit">
@@ -110,7 +111,8 @@
                 <div class="toggle-panel">
                     <h1>Welcome!</h1>
                     <p>Enter your details and start a journey with us</p>
-                    <button id="signUp-button" onclick="showHiddenContainer()">Sign Up</button>
+                    <button class="signUp-button" id="signUp-button" onclick="showHiddenContainer()">Sign Up</button>
+                    <button class="signUp-buttonMobile" onclick="showHiddenContainerMobile()">Sign Up</button>
                 </div>
             </div>
         </section>

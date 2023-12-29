@@ -13,7 +13,7 @@ function confirmRegist() {
         if (result.isConfirmed) {
             Swal.fire({
                 title: "Added!",
-                text: "Agency has been added.",
+                text: "Bank has been added.",
                 icon: "success",
                 iconColor: '#113946',
                 confirmButtonColor: '#3F2305'

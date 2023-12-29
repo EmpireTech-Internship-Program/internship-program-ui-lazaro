@@ -25,11 +25,14 @@
             </div>
         </div>
     </header>
+    
+    <script src="../../js/listsEditScripts/accountListEdit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <main>
         <section>
             <div class="wrapper">
-                <form>
+                <form onsubmit="confirmRegist()">
                     <div class="accountType">
                         <label><strong>Account Type *</strong></label>
                         <select id="accountTypeDropdown" required>
@@ -68,7 +71,7 @@
                             Cancel
                         </a>
 
-                        <button class="save">
+                        <button type="submit" class="save" id="save">
                             Save
                         </button>
                     </div>

@@ -28,10 +28,13 @@
         </div>
     </header>
 
+    <script src="../../js/listsEditScripts/peopleListEdit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <main>
         <section>
             <div class="wrapper">
-                <form>
+                <form onsubmit="confirmRegist()">
                     <div class="fullname">
                         <label><strong>Fullname *</strong></label>
                         <input type="text" required>
@@ -67,7 +70,7 @@
                             Cancel
                         </a>
 
-                        <button type="submit" class="save">
+                        <button type="submit" class="save" id="save">
                             Save
                         </button>
                     </div>

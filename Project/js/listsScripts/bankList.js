@@ -4,10 +4,16 @@ const sideBar = document.getElementById('sideBar');
 const header = document.getElementById('header');
 const preview = document.querySelectorAll('.preview');
 const edit = document.querySelectorAll('.edit');
+const mainContent = document.getElementById('mainContent');
+const deleteFunction = document.querySelectorAll('.delete');
+const darkMode = document.getElementById('darkMode');
 
 function closeMenu() {
     header.style.animation = 'slide 0.5s ease';
     header.style.left = '0';
+
+    mainContent.style.animation = 'mainSlide 0.5s ease';
+    mainContent.style.left = '140px';
 
     sideBar.style.animation = 'shrink 0.5s ease';
     sideBar.style.width = '0';
@@ -26,6 +32,9 @@ function openMenu() {
     header.style.animation = 'backSlide 0.5s ease';
     header.style.left = '280px';
 
+    mainContent.style.animation = 'mainBackSlide 0.5s ease';
+    mainContent.style.left = '280px';
+
     sideBar.style.animation = 'expand 0.5s ease';
     sideBar.style.width = '280px';
 
@@ -39,6 +48,10 @@ function openMenu() {
     closeSideBarMenu.style.pointerEvents = 'auto';
 }
 
+darkMode.addEventListener('click', function (){
+    alert('Dark Mode is not working :(');
+});
+
 preview.forEach(preview => {
     preview.addEventListener('click', function () {
         window.location.href = '../../screens/previews/bankPreview.html';
@@ -48,5 +61,38 @@ preview.forEach(preview => {
 edit.forEach(edit => {
     edit.addEventListener('click', function () {
         window.location.href = '../../screens/listsEdit/bankListEdit.html';
+    });
+});
+
+deleteFunction.forEach(deleteFunction => {
+    deleteFunction.addEventListener('click', function () {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            iconColor: '#113946',
+            showCancelButton: true,
+            confirmButtonColor: "#3F2305",
+            cancelButtonColor: "#BCA37F",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Bank has been deleted.",
+                    icon: "success",
+                    iconColor: '#113946',
+                    confirmButtonColor: '#3F2305'
+                });
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                swal.fire({
+                    title: "Cancelled",
+                    text: "Removal cancelled",
+                    icon: "error",
+                    iconColor: '#113946',
+                    confirmButtonColor: '#3F2305'
+                });
+            }
+        });
     });
 });

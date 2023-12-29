@@ -2,6 +2,7 @@
 
 :root {
     --teal: #113946;
+    --teal2: #1c5061;
     --tan: #BCA37F;
     --brown: #3F2305;
     --wheat: #DFD7BF;
@@ -46,7 +47,7 @@ header {
     color: var(--teal);
 }
 
-.topbar .toggle .closeSideBarMenu {
+.topbar .toggle .closeSideBar {
     transition: opacity 0.5s ease;
 }
 
@@ -54,6 +55,10 @@ header {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease, display 0.5s ease;
+}
+
+.topbar .profileHeader {
+    display: none;
 }
 
 .topbar .header-functions {
@@ -69,8 +74,12 @@ header {
     margin-right: 30px;
 }
 
+.signOutButton, .supportHeaderButton {
+    display: none;
+}
+
 .topbar .header-functions .theme-icon:hover i,
-.aboutUs-icon:hover i {
+.github-icon:hover i {
     color: var(--teal);
 }
 
@@ -198,10 +207,30 @@ section nav ul {
     margin: 50px 0;
 }
 
+.currentList {
+    border-bottom: 2px solid var(--teal2);
+    color: var(--teal2);
+    font-weight: 600;
+}
+
 section nav ul li a {
     color: var(--brown);
     text-decoration: none;
     font-size: 18px;
+}
+
+.navbar ul li .currentPage {
+    color: var(--tan);
+}
+
+.navbar ul li .currentPage::after {
+    content: '';
+    width: 5px;
+    height: 40px;
+    background-image: linear-gradient(45deg, var(--tan), var(--brown));
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
 
 section nav ul li a:hover {
@@ -378,6 +407,15 @@ table {
     }
 }
 
+@keyframes mainSlide {
+    from {
+        left: 280px;
+    }
+    to {
+        left: 140px;
+    }
+}
+
 @keyframes shrink {
     from {
         width: 280px;
@@ -402,5 +440,333 @@ table {
     }
     to {
         left: 280px;
+    }
+}
+
+@keyframes mainBackSlide {
+    from {
+        left: 140px;
+    }
+    to {
+        left: 280px;
+    }
+}
+
+/* Mobile Accessibility */
+
+@media screen and (max-width: 1300px) {
+    header {
+        left: 200px;
+    }
+
+    .closeSideBar {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .navbar {
+        width: 200px;
+        height: 100%;
+    }
+    
+    .navbar .logo img {
+        width: 160px;
+        margin: 25px 20px;
+    }
+    
+    .navbar .profile img {
+        transform: scale(0.8);
+        margin: 40px 0 0;
+    }
+    
+    .navbar .profile span {
+        font-size: 16px;
+    }
+    
+    .navbar ul {
+        margin-top: 80px;
+    }
+    
+    .navbar ul li {
+        margin-left: 30px;
+    }
+    
+    .navbar ul li a .icon {
+        min-width: 30px;
+        height: 50px;
+    }
+    
+    .navbar ul li a .title {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    main section .dashboard-container {
+        left: 200px;
+    }
+    
+    .dashboard-container .dashboard-title i {
+        font-size: 20px;
+    }
+    
+    .dashboard-container .dashboard-title h3 {
+        font-size: 30px;
+    }
+    
+    section nav ul {
+        gap: 2em;
+    }
+    
+    section nav ul li a {
+        font-size: 16px;
+    }
+    
+    section .searchBar {
+        width: 210px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    
+    section .searchBar button {
+        margin-left: 0;
+        height: 30px;
+    }
+    
+    section .dropdownMenu {
+        margin-right: 20px;
+    }
+    
+    section .dropdownMenu select {
+        width: 210px;
+        height: 30px;
+    }
+    
+    section .refreshButton button {
+        font-size: 12px;
+        width: 90px;
+        height: 35px;
+    }
+    
+    .addButton {
+        margin-left: 22%;
+    }
+    
+    .addButton button {
+        padding: 16px;
+    }
+    
+    table {
+        width: 75%;
+    }
+    
+    .listDashboard tbody td i {
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        left: 0;
+    }
+
+    .topbar .profileHeader {
+        display: inline-block;
+        position: fixed;
+        top: -70px;
+        left: 0;
+    }
+
+    .topbar .profileHeader img {
+        width: 200px;
+        height: 200px;
+        transform: scale(0.2);
+        border-radius: 50%;
+    }
+
+    .closeSideBar {
+        display: none;
+    }
+
+    .signOutButton, .supportHeaderButton {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .signOutButton i:hover, .supportHeaderButton i:hover {
+        color: var(--teal);
+    }
+
+    .container {
+        display: none;
+    }
+    
+    main section .dashboard-container {
+        left: 0;
+    }
+
+    .addButton {
+        margin-left: 5%;
+    }
+
+    .addButton span {
+        display: none;
+    }
+
+    .addButton button {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+
+    table {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .listDashboard {
+        margin-top: 60px;
+    }
+
+    .listDashboard th {
+        font-size: 12px;
+    }
+    
+    .listDashboard tr {
+        font-size: 12px;
+    }
+
+    .listDashboard tbody td {
+        border-radius: 7px;
+        padding-left: 10px;
+    }
+
+    .listDashboard tbody td i {
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topbar .profileHeader {
+        left: -50px;
+    }
+
+    .topbar .header-functions {
+        right: 30px;
+        top: 20px;
+    }
+
+    .header-functions i {
+        font-size: 20px;
+    }
+
+    .signOutButton, .supportHeaderButton {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .signOutButton i:hover, .supportHeaderButton i:hover {
+        color: var(--teal);
+    }
+
+    .container {
+        display: none;
+    }
+    
+    main section .dashboard-container {
+        left: 0;
+        margin: 80px 15px;
+    }
+    
+    section nav ul {
+        gap: 1em;
+    }
+    
+    section nav ul li a {
+        font-size: 14px;
+    }
+    
+    section .searchBar {
+        width: 150px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    section .searchBar input {
+        width: 100px;
+        margin-left: 10px;
+    }
+    
+    section .searchBar button {
+        margin-left: 120px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+    
+    section .dropdownMenu {
+        margin-right: 10px;
+    }
+    
+    section .dropdownMenu select {
+        width: 110px;
+        height: 30px;
+    }
+    
+    section .refreshButton button {
+        font-size: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    section .refreshButton span {
+        display: none;
+    }
+
+    .addButton {
+        margin-left: 2%;
+    }
+
+    .addButton span {
+        display: none;
+    }
+
+    .addButton button {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+
+    table {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .listDashboard {
+        margin-top: 60px;
+    }
+
+    .listDashboard th {
+        font-size: 8px;
+    }
+    
+    .listDashboard tr {
+        font-size: 8px;
+    }
+
+    .listDashboard tbody td {
+        border-radius: 7px;
+        padding-left: 3px;
+    }
+
+    .listDashboard tbody td i {
+        left: -2px;
+        padding: 5px;
     }
 }

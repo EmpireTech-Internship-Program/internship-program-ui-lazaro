@@ -24,12 +24,16 @@
                 </a>
             </div>
         </div>
+        
+    <script src="../../js/registrationsScripts/agencyRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </header>
 
     <main>
         <section>
             <div class="wrapper">
-                <form>
+                <form onsubmit="confirmRegist()">
                     <div class="name">
                         <label><strong>Name *</strong></label>
                         <input type="text" required>
@@ -55,7 +59,7 @@
                             Cancel
                         </a>
 
-                        <button class="save">
+                        <button type="submit" class="save" id="save">
                             Save
                         </button>
                     </div>
@@ -63,8 +67,6 @@
             </div>
         </section>
     </main>
-
-    <script src="../../js/registrationsScripts/agencyRegister.js"></script>
 
 </body>
 </html>

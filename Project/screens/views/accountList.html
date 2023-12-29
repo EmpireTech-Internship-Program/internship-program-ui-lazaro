@@ -16,14 +16,32 @@
                 <i class="fa-solid fa-xmark closeSideBar" id="closeSideBarMenu" onclick="closeMenu()"></i>
             </div>
 
+            <div class="profileHeader">
+                <a href="../user/profileSettings.html">
+                    <img src="../../images/Profile_Template_Pic/profile_template_woman_pic.jpg">
+                </a>
+            </div>
+
             <div class="header-functions">
-                <div class="theme-icon">
+                <div class="theme-icon" id="darkMode">
                     <i class="fa-solid fa-moon"></i>
                 </div>
 
-                <div class="aboutUs-icon">
+                <div class="github-icon">
                     <a href="https://github.com/LazVeiga" target="_blank">
                         <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="supportHeaderButton">
+                    <a href="https://wa.me/558281710710/?text=Support" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="signOutButton">
+                    <a href="../../Login/index.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </a>
                 </div>
             </div>
@@ -46,7 +64,7 @@
 
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" class="currentPage">
                             <span class="icon">
                                 <i class="fa-solid fa-house"></i>
                             </span>
@@ -78,7 +96,7 @@
 
     <main>
         <section>
-            <div class="dashboard-container">
+            <div class="dashboard-container" id="mainContent">
                 <span class="dashboard-title">
                     <i class="fa-solid fa-id-badge"></i>
                     <h3>Accounts</h3>
@@ -101,7 +119,7 @@
 
                             <li>
                                 <a href="#">
-                                    <span>Account</span>
+                                    <span class="currentList">Account</span>
                                 </a>
                             </li>
 
@@ -133,7 +151,7 @@
                     <div class="refreshButton">
                         <button>
                             <i class="fa-solid fa-rotate-right"></i>
-                            Refresh
+                            <span>Refresh</span>
                         </button>
                     </div>
 
@@ -141,7 +159,7 @@
                         <a href="../registrations/accountRegister.html">
                             <button>
                                 <i class="fa-solid fa-plus"></i>
-                                Add Account
+                                <span>Add Account</span>
                             </button>
                         </a>
                     </div>
@@ -169,7 +187,7 @@
                                 <td>
                                     <i class="fa-solid fa-eye preview"></i>
                                     <i class="fa-solid fa-pen-to-square edit"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
                                 </td>
                             </tr>
 
@@ -182,7 +200,7 @@
                                 <td>
                                     <i class="fa-solid fa-eye preview"></i>
                                     <i class="fa-solid fa-pen-to-square edit"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
                                 </td>
                             </tr>
 
@@ -195,7 +213,7 @@
                                 <td>
                                     <i class="fa-solid fa-eye preview"></i>
                                     <i class="fa-solid fa-pen-to-square edit"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
                                 </td>
                             </tr>
 
@@ -208,7 +226,7 @@
                                 <td>
                                     <i class="fa-solid fa-eye preview"></i>
                                     <i class="fa-solid fa-pen-to-square edit"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
                                 </td>
                             </tr>
 
@@ -221,7 +239,7 @@
                                 <td>
                                     <i class="fa-solid fa-eye preview"></i>
                                     <i class="fa-solid fa-pen-to-square edit"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
                                 </td>
                             </tr>
                         </tbody>
@@ -232,6 +250,7 @@
     </main>
 
     <script src="../../js/listsScripts/accountList.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

@@ -190,6 +190,10 @@ body {
     z-index: 1;
 }
 
+.signUp-buttonMobile {
+    display: none;
+}
+
 /* Right box title */
 
 .toggle-container h1 {
@@ -239,6 +243,10 @@ body {
     opacity: 0;
     z-index: 0;
     transition: all 0.6s ease-in-out;
+}
+
+.loginReturnMobileButton {
+    visibility: hidden;
 }
 
 .hidden-container .signUp-container form {
@@ -559,7 +567,7 @@ body {
 
     .hidden-container {
         width: 520px;
-        min-height: 750px;
+        min-height: 650px;
         backface-visibility: hidden;
     }
 
@@ -998,7 +1006,7 @@ body {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
     body {
         overflow: hidden;
     }
@@ -1010,6 +1018,14 @@ body {
         z-index: 2;
         transform-style: preserve-3d;
         opacity: 0;
+    }
+
+    .signUp-button {
+        display: none;
+    }
+
+    .signUp-buttonMobile {
+        display: flex;
     }
 
     .toggle-container h1 {
@@ -1026,11 +1042,6 @@ body {
         transform: translate(70px, 30px) rotateY(180deg);
         font-size: 14px;
         padding: 12px 35px;
-    }
-
-    .toggle-container.active {
-        transform: perspective(300px) rotateY(180deg);
-        opacity: 1;
     }
 
     .container {
@@ -1123,15 +1134,18 @@ body {
         color: var(--brown);
     }
 
-    .container.active {
-        transform: perspective(300px) rotateY(180deg);
-        opacity: 0;
-    }
-
     .hidden-container {
         width: 330px;
         min-height: 450px;
         backface-visibility: hidden;
+    }
+
+    .login-return {
+        visibility: hidden;
+    }
+
+    .loginReturnMobileButton {
+        visibility: visible;
     }
 
     .hidden-container .signUp-container h1 {
@@ -1180,10 +1194,5 @@ body {
         padding: 10px 20px;
         font-weight: 800;
         transform: translateY(10px);
-    }
-
-    .hidden-container.active {
-        transform: perspective(300px) rotateY(-180deg);
-        opacity: 0;
     }
 }

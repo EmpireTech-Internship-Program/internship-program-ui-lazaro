@@ -1,7 +1,7 @@
 function confirmRegist() {
     event.preventDefault();
     Swal.fire({
-        title: "Add Regist?",
+        title: "Confirm the edits?",
         text: "",
         icon: "question",
         iconColor: '#113946',
@@ -12,8 +12,8 @@ function confirmRegist() {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: "Added!",
-                text: "Agency has been added.",
+                title: "Edit saved!",
+                text: "Agency has been edited.",
                 icon: "success",
                 iconColor: '#113946',
                 confirmButtonColor: '#3F2305'

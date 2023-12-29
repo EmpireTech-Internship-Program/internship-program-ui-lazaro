@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="icon" type="image/png"
+        href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../css/userStyles/profileSettings.css">
     <title>Profile - Empire Finance Network</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
     <main>
         <section>
-            <form>
+            <form onsubmit="return confirmUpdate()">
                 <div class="container">
                     <span class="returnIcon">
                         <a href="#" id="returnLink">
@@ -22,14 +25,20 @@
                         </a>
                     </span>
 
-                    <h1>Fake Profile</h1>
+                    <div class="userIdEditor">
+                        <input type="text">
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
 
-                    <img src="../../images/Profile_Template_Pic/profile.png" id="profilePic">
+                    <div class="imageChanger">
+                        <img src="../../images/Profile_Template_Pic/profile.png" id="profilePic">
 
-                    <label for="input-file">Upload Image</label>
+                        <label for="input-file">Upload Image</label>
 
-                    <input type="file" accept="image/png, image/jpeg, image/jpg" id="input-file" required>
-                    <button type="submit" class="confirmUpdate">
+                        <input type="file" accept="image/png, image/jpeg, image/jpg" id="input-file" required>
+                    </div>
+
+                    <button type="submit" class="confirmUpdate" id="confirmUpdateButton">
                         <i class="fa-solid fa-check" id="updateImage"></i>
                     </button>
                 </div>
