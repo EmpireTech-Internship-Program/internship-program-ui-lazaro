@@ -34,6 +34,18 @@
         <section>
             <div class="wrapper">
                 <form onsubmit="confirmRegist()">
+                    <div class="banks">
+                        <label><strong>Banks *</strong></label>
+                        <select id="accountTypeDropdown" required>
+                            <option class="dropdownHolder" disabled selected>Choose a bank</option>
+                            <option>Brazilian Bank</option>
+                            <option>GuBank</option>
+                            <option>Moonbank</option>
+                            <option>Polar Bank</option>
+                            <option>JJJ Bank</option>
+                        </select>
+                    </div>
+
                     <div class="name">
                         <label><strong>Name *</strong></label>
                         <input type="text" required>

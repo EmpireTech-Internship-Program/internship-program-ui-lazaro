@@ -13,8 +13,8 @@
     <header>
         <div class="header-content">
             <div class="title">
-                <h4>Registers/Referral</h4>
-                <h1>Referral</h1>
+                <h4>Registers/Edit</h4>
+                <h1>Agency</h1>
             </div>
 
             <div class="return-button">
@@ -33,6 +33,18 @@
         <section>
             <div class="wrapper">
                 <form onsubmit="confirmRegist()">
+                    <div class="banks">
+                        <label><strong>Banks *</strong></label>
+                        <select id="accountTypeDropdown" required>
+                            <option class="dropdownHolder" selected disabled>Choose a bank</option>
+                            <option>Brazilian Bank</option>
+                            <option>GuBank</option>
+                            <option>Moonbank</option>
+                            <option>Polar Bank</option>
+                            <option>JJJ Bank</option>
+                        </select>
+                    </div>
+
                     <div class="name">
                         <label><strong>Name *</strong></label>
                         <input type="text" required>
@@ -49,7 +61,7 @@
                     </div>
 
                     <div class="code">
-                        <label><strong>Code *</strong></label>
+                        <label><strong>ID *</strong></label>
                         <input type="text" required>
                     </div>
 

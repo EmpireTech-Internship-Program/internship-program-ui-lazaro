@@ -107,7 +107,7 @@ input::placeholder {
     font-style: italic;
 }
 
-.accountType, .accountNumber, .openingBalance, .accountHolder, .openingDate {
+.agencies, .accountType, .accountNumber, .openingBalance, .accountHolder, .openingDate {
     margin-right: 20px;
 }
 
@@ -123,7 +123,7 @@ input::placeholder {
     width: 400px;
 }
 
-.accountType select {
+.agencies select, .accountType select {
     width: 200px;
     padding: 7px;
     border: 1px solid rgba(119, 104, 71, 0.459);

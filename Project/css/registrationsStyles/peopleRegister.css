@@ -94,15 +94,16 @@ section {
     color: var(--teal);
 }
 
-.fullname, .birth, .cpf, .address, .phoneNumber, .email {
+.accountsNumber, .fullname, .birth, .cpf, .address, .phoneNumber, .email {
     margin-right: 20px;
 }
 
-.wrapper form input {
+.wrapper form input, .accountsNumber select {
     padding: 7px;
     margin-bottom: 10px;
     outline: none;
     border: 1px solid rgba(119, 104, 71, 0.459);
+    color: var(--tan);
     background-color: var(--peach);
 }
 
@@ -114,7 +115,7 @@ section {
     width: 200px;
 }
 
-.cpf input, .phoneNumber input {
+.accountsNumber select, .cpf input, .phoneNumber input {
     width: 300px;
 }
 

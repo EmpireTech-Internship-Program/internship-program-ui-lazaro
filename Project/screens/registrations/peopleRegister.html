@@ -15,8 +15,8 @@
     <header>
         <div class="header-content">
             <div class="title">
-                <h4>Registers/Referral</h4>
-                <h1>Referral</h1>
+                <h4>Registers</h4>
+                <h1>People</h1>
             </div>
 
             <div class="return-button">
@@ -35,6 +35,18 @@
         <section>
             <div class="wrapper">
                 <form onsubmit="confirmRegist()">
+                    <div class="accountsNumber">
+                        <label><strong>Account Number *</strong></label>
+                        <select id="accountsNumberDropdown" required>
+                            <option class="dropdownHolder" disabled selected>Choose an option</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select>
+                    </div>
+
                     <div class="fullname">
                         <label><strong>Fullname *</strong></label>
                         <input type="text" required>

@@ -13,8 +13,8 @@
     <header>
         <div class="header-content">
             <div class="title">
-                <h4>Registers/Referral</h4>
-                <h1>Referral</h1>
+                <h4>Registers/Edit</h4>
+                <h1>Account</h1>
             </div>
 
             <div class="return-button">
@@ -33,6 +33,18 @@
         <section>
             <div class="wrapper">
                 <form onsubmit="confirmRegist()">
+                    <div class="agencies">
+                        <label><strong>Agency *</strong></label>
+                        <select id="accountTypeDropdown" required>
+                            <option class="dropdownHolder" disabled selected>Choose an option</option>
+                            <option>Central FinanCity</option>
+                            <option>First Capital</option>
+                            <option>Financial Hub</option>
+                            <option>Unity Plaza</option>
+                            <option>Digital Nexus</option>
+                        </select>
+                    </div>
+
                     <div class="accountType">
                         <label><strong>Account Type *</strong></label>
                         <select id="accountTypeDropdown" required>

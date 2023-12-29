@@ -94,11 +94,11 @@ section {
     color: var(--teal);
 }
 
-.fullname, .birth, .cpf, .address, .phoneNumber, .email {
+.accountsNumber, .fullname, .birth, .cpf, .address, .phoneNumber, .email {
     margin-right: 20px;
 }
 
-.wrapper form input {
+.wrapper form input, .accountsNumber select {
     padding: 7px;
     margin-bottom: 10px;
     outline: none;
@@ -112,9 +112,10 @@ section {
 
 .birth input[type="date"] {
     width: 200px;
+    color: var(--tan);
 }
 
-.cpf input, .phoneNumber input {
+.accountsNumber select, .cpf input, .phoneNumber input {
     width: 300px;
 }
 

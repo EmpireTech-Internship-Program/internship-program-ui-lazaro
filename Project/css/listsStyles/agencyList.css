@@ -361,7 +361,7 @@ table {
     align-items: center;
     padding-left: 20px;
     position: relative;
-    left: 20px;
+    left: 40px;
     cursor: pointer;
 }
 
@@ -765,7 +765,7 @@ table {
     }
 
     .listDashboard tbody td i {
-        left: 0;
+        left: 5px;
         padding: 5px;
     }
 }

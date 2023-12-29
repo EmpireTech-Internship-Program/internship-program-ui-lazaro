@@ -94,7 +94,7 @@ section {
     color: var(--teal);
 }
 
-.name, .number, .address, .code {
+.banks, .name, .number, .address, .code {
     margin-right: 20px;
 }
 
@@ -107,7 +107,11 @@ section {
     background-color: var(--peach);
 }
 
-.number input {
+.banks select {
+    color: var(--tan);
+}
+
+.banks select, .number input {
     width: 200px;
     padding: 7px;
     margin-bottom: 10px;
