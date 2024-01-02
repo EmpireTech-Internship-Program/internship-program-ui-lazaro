@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/registrationsStyles/bankRegister.css">
+    <title>Bank Register - Empire Finance Network</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="title">
+                <h4>Registers</h4>
+                <h1>Bank</h1>
+            </div>
+
+            <div class="return-button">
+                <a href="../views/bankList.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <form onsubmit="confirmRegist()">
+                    <div class="bankName">
+                        <label><strong>Bank Name *</strong></label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="bankCode">
+                        <label><strong>Bank Code *</strong></label>
+                        <input type="text" required>
+                    </div>
+                    
+                    <div class="confirm-cancel-buttons">
+                        <a href="../views/bankList.html">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="save" id="save">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../js/registrationsScripts/bankRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

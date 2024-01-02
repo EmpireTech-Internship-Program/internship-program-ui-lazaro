@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap');
+
+:root {
+    --teal: #113946;
+    --tan: #BCA37F;
+    --brown: #3F2305;
+    --wheat: #DFD7BF;
+    --lightBeige: #f3e5c8;
+    --peach: #EAD7BB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--lightBeige);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-content {
+    background-color: var(--wheat);
+    width: 100%;
+}
+
+.title {
+    margin: 50px 50px;
+}
+
+.title h4 {
+    color: var(--tan);
+    font-weight: 400;
+}
+
+.title h1 {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+.return-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 10px;
+    transform: translate(-50px, -90px);
+}
+
+.return-button i {
+    font-size: 12px;
+}
+
+.return-button a {
+    text-decoration: none;
+    color: var(--tan);
+}
+
+.return-button a:hover {
+    color: var(--brown);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    padding: 100px;
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper form label {
+    display: flex;
+    flex-direction: column;
+    color: var(--teal);
+}
+
+.accountsNumber, .fullname, .birth, .cpf, .address, .phoneNumber, .email {
+    margin-right: 20px;
+}
+
+.wrapper form input, .accountsNumber select {
+    padding: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgba(119, 104, 71, 0.459);
+    background-color: var(--peach);
+}
+
+.accountsNumber select {
+    color: var(--brown);
+}
+
+.fullname input, .email input {
+    width: 500px;
+}
+
+.birth input[type="date"] {
+    width: 200px;
+    color: var(--tan);
+}
+
+.accountsNumber select, .cpf input, .phoneNumber input {
+    width: 300px;
+}
+
+.address input {
+    width: 700px;
+}
+
+.confirm-cancel-buttons {
+    margin-top: 100px;
+    position: relative;
+    left: 90%;
+}
+
+.confirm-cancel-buttons button {
+    cursor: pointer;
+}
+
+.confirm-cancel-buttons a {
+    text-decoration: none;
+    background-color: var(--tan);
+    color: var(--peach);
+    width: 60px;
+    height: 35px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.confirm-cancel-buttons .save {
+    background-color: var(--brown);
+    color: var(--peach);
+    width: 60px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width: 1800px) {
+    section {
+        padding: 30px;
+    }
+
+    .confirm-cancel-buttons {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        padding: 60px 90px;
+    }
+
+    .fullname input, .email input {
+        width: 600px;
+    }
+
+    .confirm-cancel-buttons {
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section {
+        padding: 30px;
+    }
+
+    .fullname input, .email input, .birth input, .cpf input, .phoneNumber input, .address input {
+        width: 320px;
+    }
+
+    .confirm-cancel-buttons {
+        margin-top: 100px;
+        position: relative;
+        left: 55%;
+    }
+}

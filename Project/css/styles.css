@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+:root {
+    --teal: #113946;
+    --tan: #BCA37F;
+    --brown: #3F2305;
+    --wheat: #DFD7BF;
+    --lightBeige: #f3e5c8;
+    --peach: #EAD7BB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--lightBeige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left Box (Login side) */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--tan);
+    width: 600px;
+    max-width: 100%;
+    min-height: 650px;
+    border-radius: 5px 30px;
+    position: absolute;
+    transform: translate(-40%, 9%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+}
+
+.container .login-container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Login title */
+
+.container .login-container h1 {
+    color: var(--brown);
+    display: flex;
+    transform: translateY(-80px);
+    font-size: 40px;
+}
+
+/* Input box */
+
+.container .login-container .input-box {
+    position: relative;
+    width: 480px;
+    padding: 20px;
+    margin: 15px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--wheat);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 var(--brown);
+    transform: translateY(-25px);
+}
+
+/* Input */
+
+.container .login-container input {
+    width: 400px;
+    margin: 8px 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.container .login-container input::placeholder {
+    font-style: italic;
+    color: var(--tan);
+}
+
+/* Input box icons */
+
+.container .login-container .input-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-5px);
+    color: var(--tan);
+}
+
+/* Separator ("|") between icon and input box */
+
+.container .login-container .input-box p {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-10px);
+    font-size: 14px;
+    color: var(--tan);
+}
+
+/* 'Remember Me' & 'Forgot Password?' wrapper */
+
+.container .login-container .remember-forgot {
+    vertical-align: middle;
+    font-size: 16px;
+    color: var(--peach);
+    position: relative;
+    transform: translateY(5px);
+}
+
+/* 'Remember Me' checkbox */
+
+.container .login-container .remember-forgot label input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    vertical-align: middle;
+    transform: translate(-10px, -2px);
+    accent-color: var(--brown);
+}
+
+/* 'Forgot Password?' Hyperlink */
+
+.container .login-container a {
+    color: var(--peach);
+    font-size: 16px;
+    margin-left: 160px;
+}
+
+/* 'Log in' button */
+
+.container .login-container button {
+    display: flex;
+    background-color: var(--brown);
+    color: var(--peach);
+    font-size: 18px;
+    padding: 18px 50px;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
+    transform: translateY(50px);
+}
+
+/* User Icon (Inside 'Log in' Button) */
+
+.container .login-container button i {
+    vertical-align: middle;
+    transform: translate(-5px, 5px);
+    font-size: 14px;
+}
+
+.container .mobileSignUpRedirect {
+    display: none;
+}
+
+/* Right box (Sign Up side) */
+
+.toggle-container {
+    background-color: var(--teal);
+    width: 700px;
+    max-width: 100%;
+    min-height: 750px;
+    border-radius: 30px 5px;
+    transform: translateX(40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
+    transition: all 0.6s ease-in-out;
+    z-index: 1;
+}
+
+.signUp-buttonMobile {
+    display: none;
+}
+
+/* Right box title */
+
+.toggle-container h1 {
+    color: var(--tan);
+    text-align: center;
+    font-size: 45px;
+}
+
+/* Subtitle */
+
+.toggle-container p {
+    transform: translateY(30%);
+    color: var(--tan);
+}
+
+/* 'Sign Up' Button */
+
+.toggle-container button {
+    background-color: var(--tan);
+    color: var(--brown);
+    transform: translate(55%, 100%);
+    font-size: 18px;
+    padding: 18px 50px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.514);
+}
+
+/* Sign Up */
+
+.hidden-container {
+    background-color: var(--teal);
+    width: 700px;
+    max-width: 100%;
+    min-height: 750px;
+    border-radius: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.loginReturnMobileButton {
+    visibility: hidden;
+}
+
+.hidden-container .signUp-container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden-container .signUp-container h1 {
+    color: var(--tan);
+    display: flex;
+    transform: translateY(-60px);
+    font-size: 40px;
+}
+
+.hidden-container .login-return i {
+    cursor: pointer;
+}
+
+.hidden-container .signUp-container .input-box {
+    position: relative;
+    width: 530px;
+    padding: 18px;
+    margin: 8px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--peach);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 4px 0 0 var(--tan);
+    transform: translateY(-15px);
+}
+
+.hidden-container .signUp-container input {
+    width: 400px;
+    margin: 8px 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.hidden-container .signUp-container input::placeholder {
+    font-style: italic;
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-5px);
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container p {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-10px);
+    font-size: 14px;
+    color: var(--tan);
+}
+
+.hidden-container .signUp-container .rememberMe-checkbox {
+    vertical-align: middle;
+    font-size: 16px;
+    color: var(--tan);
+    position: relative;
+    transform: translateY(12px);
+    margin-right: 65%;
+}
+
+.hidden-container .signUp-container .rememberMe-checkbox label input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    transform: translate(-10px, -2px);
+    vertical-align: middle;
+    accent-color: var(--tan);
+}
+
+.hidden-container .signUp-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--tan);
+    color: var(--brown);
+    font-size: 18px;
+    padding: 18px 50px;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
+    transform: translateY(50px);
+}
+
+/* Animations */
+
+@keyframes fadeOutSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+
+    25% {
+        opacity: 0.5;
+        z-index: 3;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 0.90;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 3;
+    }
+}
+
+@keyframes hideSlideLeftToCenter {
+    0% {
+        transform: translate(-40%, 9%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hideSlideRightToCenter {
+    0% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes backSlideHiddenToRight {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(40%);
+    }
+}
+
+@keyframes backSlideHiddenToLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-40%, 9%);
+        z-index: 2;
+    }
+}
+
+@keyframes hideSlide {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 5;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    80% {
+        opacity: 0.15;
+    }
+
+    90% {
+        opacity: 0.05;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(40%);
+        z-index: 0;
+    }
+}
+
+/* Mobile Accessibility */
+
+@media screen and (max-width: 1300px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 400px;
+        max-width: 100%;
+        min-height: 550px;
+        transform: translate(-35%, 9%);
+    }
+
+    .container .login-container h1 {
+        font-size: 30px;
+        transform: translateY(-70px);
+    }
+
+    .container .login-container .input-box {
+        width: 320px;
+        padding: 10px;
+        margin: 10px;
+        transform: translateY(-10px);
+    }
+
+    .container .login-container input {
+        width: 220px;
+    }
+
+    .container .login-container input::placeholder {
+        font-size: 12px;
+    }
+
+    .container .login-container .input-box i {
+        font-size: 14px;
+    }
+
+    .container .login-container .remember-forgot {
+        font-size: 14px;
+    }
+
+    .container .login-container .remember-forgot label input {
+        width: 14px;
+        height: 14px;
+        transform: translate(-2px, -2px);
+    }
+
+    .container .login-container a {
+        color: var(--peach);
+        font-size: 14px;
+        margin-left: 60px;
+    }
+
+    .container .login-container button {
+        font-size: 12px;
+        padding: 12px 35px;
+        font-weight: 800;
+        transform: translateY(50px);
+    }
+
+    .container .login-container button i {
+        font-size: 10px;
+    }
+
+    .toggle-container {
+        width: 520px;
+        min-height: 650px;
+        transform: translateX(30%);
+    }
+
+    .toggle-container h1 {
+        font-size: 35px;
+    }
+
+    .toggle-container p {
+        font-size: 10px;
+    }
+
+    .toggle-container button {
+        transform: translate(45px, 30px);
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+
+    .hidden-container {
+        width: 520px;
+        min-height: 650px;
+        backface-visibility: hidden;
+    }
+
+    .hidden-container .signUp-container h1 {
+        transform: translateY(-50px);
+        font-size: 30px;
+    }
+
+    .hidden-container .signUp-container .input-box {
+        width: 370px;
+        padding: 10px;
+        margin: 10px;
+        transform: translateY(-10px);
+    }
+
+    .hidden-container .signUp-container input {
+        width: 320px;
+    }
+
+    .hidden-container .signUp-container input::placeholder {
+        font-size: 12px;
+    }
+
+    .hidden-container .signUp-container i {
+        font-size: 14px;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox {
+        font-size: 14px;
+        transform: translateY(-2px);
+        margin-right: 60%;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox label input {
+        width: 14px;
+        height: 14px;
+        transform: translate(-2px, -2px);
+    }
+
+    .hidden-container .signUp-container button {
+        font-size: 12px;
+        padding: 12px 35px;
+        font-weight: 800;
+        transform: translateY(30px);
+    }
+
+    @keyframes fadeOutSlide {
+        0% {
+            opacity: 0;
+            transform: translateX(30%);
+        }
+
+        25% {
+            opacity: 0.5;
+            z-index: 3;
+        }
+
+        50% {
+            opacity: 0.75;
+        }
+
+        75% {
+            opacity: 0.90;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 3;
+        }
+    }
+
+    @keyframes hideSlideLeftToCenter {
+        0% {
+            transform: translate(-35%, 9%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes hideSlideRightToCenter {
+        0% {
+            transform: translateX(30%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes backSlideHiddenToRight {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(30%);
+        }
+    }
+
+    @keyframes backSlideHiddenToLeft {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(-35%, 9%);
+            z-index: 2;
+        }
+    }
+
+    @keyframes hideSlide {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 5;
+        }
+
+        25% {
+            opacity: 0.75;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.25;
+        }
+
+        80% {
+            opacity: 0.15;
+        }
+
+        90% {
+            opacity: 0.05;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(30%);
+            z-index: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 835px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 400px;
+        max-width: 100%;
+        min-height: 550px;
+        transform: translate(-35%, 9%);
+    }
+
+    .container .login-container h1 {
+        font-size: 30px;
+        transform: translateY(-70px);
+    }
+
+    .container .login-container .input-box {
+        width: 320px;
+        padding: 10px;
+        margin: 10px;
+        transform: translateY(-10px);
+    }
+
+    .container .login-container input {
+        width: 220px;
+    }
+
+    .container .login-container input::placeholder {
+        font-size: 12px;
+    }
+
+    .container .login-container .input-box i {
+        font-size: 14px;
+    }
+
+    .container .login-container .remember-forgot {
+        font-size: 14px;
+    }
+
+    .container .login-container .remember-forgot label input {
+        width: 14px;
+        height: 14px;
+        transform: translate(-2px, -2px);
+    }
+
+    .container .login-container a {
+        color: var(--peach);
+        font-size: 14px;
+        margin-left: 60px;
+    }
+
+    .container .login-container button {
+        font-size: 12px;
+        padding: 12px 35px;
+        font-weight: 800;
+        transform: translateY(50px);
+    }
+
+    .container .login-container button i {
+        font-size: 10px;
+    }
+
+    .toggle-container {
+        width: 480px;
+        min-height: 650px;
+        transform: translateX(30%);
+    }
+
+    .toggle-container h1 {
+        font-size: 35px;
+    }
+
+    .toggle-container p {
+        font-size: 10px;
+    }
+
+    .toggle-container button {
+        transform: translate(45px, 30px);
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+
+    .hidden-container {
+        width: 480px;
+        min-height: 650px;
+        backface-visibility: hidden;
+    }
+
+    .hidden-container .signUp-container h1 {
+        transform: translateY(-50px);
+        font-size: 30px;
+    }
+
+    .hidden-container .signUp-container .input-box {
+        width: 370px;
+        padding: 10px;
+        margin: 10px;
+        transform: translateY(-10px);
+    }
+
+    .hidden-container .signUp-container input {
+        width: 320px;
+    }
+
+    .hidden-container .signUp-container input::placeholder {
+        font-size: 12px;
+    }
+
+    .hidden-container .signUp-container i {
+        font-size: 14px;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox {
+        font-size: 14px;
+        transform: translateY(-2px);
+        margin-right: 60%;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox label input {
+        width: 14px;
+        height: 14px;
+        transform: translate(-2px, -2px);
+    }
+
+    .hidden-container .signUp-container button {
+        font-size: 12px;
+        padding: 12px 35px;
+        font-weight: 800;
+        transform: translateY(30px);
+    }
+
+    @keyframes fadeOutSlide {
+        0% {
+            opacity: 0;
+            transform: translateX(30%);
+        }
+
+        25% {
+            opacity: 0.5;
+            z-index: 3;
+        }
+
+        50% {
+            opacity: 0.75;
+        }
+
+        75% {
+            opacity: 0.90;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 3;
+        }
+    }
+
+    @keyframes hideSlideLeftToCenter {
+        0% {
+            transform: translate(-35%, 9%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes hideSlideRightToCenter {
+        0% {
+            transform: translateX(30%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes backSlideHiddenToRight {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(30%);
+        }
+    }
+
+    @keyframes backSlideHiddenToLeft {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(-35%, 9%);
+            z-index: 2;
+        }
+    }
+
+    @keyframes hideSlide {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 5;
+        }
+
+        25% {
+            opacity: 0.75;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.25;
+        }
+
+        80% {
+            opacity: 0.15;
+        }
+
+        90% {
+            opacity: 0.05;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(30%);
+            z-index: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .toggle-container {
+        width: 330px;
+        min-height: 450px;
+        transform: translateX(0);
+        z-index: 2;
+        transform-style: preserve-3d;
+        opacity: 0;
+    }
+
+    .signUp-button {
+        display: none;
+    }
+
+    .signUp-buttonMobile {
+        display: flex;
+    }
+
+    .toggle-container h1 {
+        font-size: 35px;
+        transform: rotateY(180deg);
+    }
+
+    .toggle-container p {
+        font-size: 12px;
+        transform: rotateY(180deg);
+    }
+
+    .toggle-container button {
+        transform: translate(70px, 30px) rotateY(180deg);
+        font-size: 14px;
+        padding: 12px 35px;
+    }
+
+    .container {
+        width: 330px;
+        position: fixed;
+        transform: translate(0);
+        min-height: 450px;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+    }
+
+    .container .login-container h1 {
+        font-size: 20px;
+        transform: translateY(-50px);
+    }
+
+    .container .login-container .input-box {
+        width: 250px;
+        padding: 5px;
+        margin: 7px;
+        transform: translateY(0);
+    }
+
+    .container .login-container input {
+        width: 170px;
+        margin: 8px 50px;
+    }
+
+    .container .login-container input::placeholder {
+        font-size: 10px;
+    }
+
+    .container .login-container .input-box i {
+        font-size: 12px;
+    }
+
+    .container .login-container .input-box p {
+        left: 40px;
+    }
+
+    .container .login-container .remember-forgot {
+        font-size: 10px;
+    }
+
+    .container .login-container .remember-forgot label input {
+        width: 12px;
+        height: 12px;
+        transform: translate(-2px, -2px);
+    }
+
+    .container .login-container a {
+        color: var(--peach);
+        font-size: 10px;
+        margin-left: 60px;
+    }
+
+    .container .login-container button {
+        font-size: 12px;
+        padding: 10px 20px;
+        font-weight: 800;
+        transform: translateY(30px);
+    }
+
+    .container .login-container button i {
+        font-size: 8px;
+    }
+
+    .container .mobileSignUpRedirect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 72%;
+    }
+
+    .container .mobileSignUpRedirect p {
+        color: var(--brown);
+        font-size: 8px;
+        margin-right: 5px;
+    }
+
+    .container .mobileSignUpRedirectButton {
+        width: 60px;
+        height: 15px;
+        padding: 0;
+        font-size: 8px;
+        background-color: var(--tan);
+        border: 1px solid var(--brown);
+        border-radius: 10px;
+        color: var(--brown);
+    }
+
+    .hidden-container {
+        width: 330px;
+        min-height: 450px;
+        backface-visibility: hidden;
+    }
+
+    .login-return {
+        visibility: hidden;
+    }
+
+    .loginReturnMobileButton {
+        visibility: visible;
+    }
+
+    .hidden-container .signUp-container h1 {
+        transform: translateY(-20px);
+        font-size: 20px;
+    }
+
+    .hidden-container .signUp-container .input-box {
+        width: 250px;
+        padding: 5px;
+        margin: 7px;
+        transform: translateY(-10px);
+    }
+
+    .hidden-container .signUp-container input {
+        width: 170px;
+        margin: 8px 50px;
+    }
+
+    .hidden-container .signUp-container input::placeholder {
+        font-size: 10px;
+    }
+
+    .hidden-container .signUp-container i {
+        font-size: 12px;
+    }
+
+    .hidden-container .signUp-container p {
+        left: 40px;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox {
+        font-size: 10px;
+        transform: translateY(-2px);
+        margin-right: 55%;
+    }
+
+    .hidden-container .signUp-container .rememberMe-checkbox label input {
+        width: 12px;
+        height: 12px;
+        transform: translate(-2px, -2px);
+    }
+
+    .hidden-container .signUp-container button {
+        font-size: 12px;
+        padding: 10px 20px;
+        font-weight: 800;
+        transform: translateY(10px);
+    }
+}

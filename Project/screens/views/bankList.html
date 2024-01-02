@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/listsStyles/bankList.css">
+    <title>Banks - Empire Finance Network</title>
+</head>
+<body>
+    <header id="header">
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fa-solid fa-bars sideBarMenuToggle" id="openSideBarMenu" onclick="openMenu()"></i>
+                <i class="fa-solid fa-xmark closeSideBar" id="closeSideBarMenu" onclick="closeMenu()"></i>
+            </div>
+
+            <div class="profileHeader">
+                <a href="../user/profileSettings.html">
+                    <img src="../../images/Profile_Template_Pic/profile_template_woman_pic.jpg">
+                </a>
+            </div>
+
+            <div class="header-functions">
+                <div class="theme-icon" id="darkMode">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+
+                <div class="github-icon">
+                    <a href="https://github.com/LazVeiga" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="supportHeaderButton">
+                    <a href="https://wa.me/558281710710/?text=Support" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="signOutButton">
+                    <a href="../../Login/index.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="navbar" id="sideBar">
+                <div class="logo">
+                    <img src="../../images/Empire_Finance_Network_logos_4/Empire_Finance_Network-logos_transparent_vintage_resized.png">
+                </div>
+
+                <div class="profile">
+                    <a href="../user/profileSettings.html">
+                        <img src="../../images/Profile_Template_Pic/profile_template_woman_pic.jpg">
+                    </a>
+                    <span>Fake Profile</span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="../views/bankList.html" class="currentPage">
+                            <span class="icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/558281710710/?text=Support" target="_blank">
+                            <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            <span class="title">Support</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../Login/index.html">
+                            <span class="icon">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </span>
+                            <span class="title">Sign out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="dashboard-container" id="mainContent">
+                <span class="dashboard-title">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Banks</h3>
+                </span>
+
+                <div class="listNavigation">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="currentList">Bank</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/agencyList.html">
+                                    <span>Agency</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/accountList.html">
+                                    <span>Account</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../views/peopleList.html">
+                                    <span>People</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="dashboard-utilities">
+                    <div class="searchBar">
+                        <input type="text" name="search" placeholder="Search">
+                        <button class="searchButton">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdownMenu">
+                        <select id="sortDropdown">
+                            <option disabled selected>Sort by</option>
+                            <option>Name</option>
+                            <option>Latest Added</option>
+                        </select>
+                    </div>
+
+                    <div class="refreshButton">
+                        <button>
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <span>Refresh</span>
+                        </button>
+                    </div>
+
+                    <div class="addButton">
+                        <a href="../registrations/bankRegister.html">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Add Bank</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="listDashboard">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bank Name</th>
+                                <th>Bank Code</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Brazilian Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square edit"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>GuBank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square edit"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Moonbank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square edit"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Polar Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square edit"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>JJJ Bank</td>
+                                <td>#</td>
+                                <td>
+                                    <i class="fa-solid fa-eye preview"></i>
+                                    <i class="fa-solid fa-pen-to-square edit"></i>
+                                    <i class="fa-solid fa-trash delete"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../js/listsScripts/bankList.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

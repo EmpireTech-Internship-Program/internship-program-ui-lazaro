@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png"
+        href="../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <title>Welcome - Empire Finance Network</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="container" id="container">
+                <div class="form-container login-container toggle-left">
+                    <form onsubmit="approveLogin()">
+                        <h1>Login Please</h1>
+
+                        <div class="mobileSignUpRedirect">
+                            <p>Not a member yet?</p>
+                            <div class="mobileSignUpRedirectButton" id="mobileSignUpRedirector" onclick="mobileSignUpRedirect()">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <label>Sign up</label>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" name="userId-email" placeholder="Input your user ID or Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>|</p>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" name="password" placeholder="Input your password" required>
+                            <i class="fa-solid fa-key"></i>
+                            <p>|</p>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                                Remember Me
+                            </label>
+                            <a href="../Login/index_recovery.html">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" id="login-button">
+                            <i class="fa-solid fa-user"></i>
+                            Log in
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="hidden-container" id="hidden-container">
+                <div class="signUp-container">
+                    <div class="form-container sign-up">
+                        <form>
+                            <h1>Create Account</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="UserID" required>
+                                <i class="fa-solid fa-user"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" required>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class="fa-solid fa-key"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" placeholder="Confirm Password" required>
+                                <i class="fa-solid fa-key"></i>
+                                <p>|</p>
+                            </div>
+
+                            <div class="rememberMe-checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkbox">
+                                    Remember Me
+                                </label>
+                            </div>
+
+                            <div class="login-return">
+                                <i class="fa-solid fa-arrow-left" id="login-return" onclick="loginReturn()"></i>
+                                <i class="fa-solid fa-arrow-left loginReturnMobileButton" id="login-returnMobileButton" onclick="loginReturnMobile()"></i>
+                            </div>
+
+                            <button type="submit">
+                                Sign up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="toggle-container" id="toggle-container">
+                <div class="toggle-panel">
+                    <h1>Welcome!</h1>
+                    <p>Enter your details and start a journey with us</p>
+                    <button class="signUp-button" id="signUp-button" onclick="showHiddenContainer()">Sign Up</button>
+                    <button class="signUp-buttonMobile" onclick="showHiddenContainerMobile()">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

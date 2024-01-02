@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/Empire_Finance_Network_logos_2/Empire_Finance_Network-logos_transparent_resized.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/registrationsStyles/peopleRegister.css">
+    <title>People Register - Empire Finance Network</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="title">
+                <h4>Registers</h4>
+                <h1>People</h1>
+            </div>
+
+            <div class="return-button">
+                <a href="../views/peopleList.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <form onsubmit="confirmRegist()">
+                    <div class="accountsNumber">
+                        <label><strong>Account Number *</strong></label>
+                        <select id="accountsNumberDropdown" required>
+                            <option class="dropdownHolder" disabled selected>Choose an option</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select>
+                    </div>
+
+                    <div class="fullname">
+                        <label><strong>Fullname *</strong></label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="birth">
+                        <label><strong>Date of Birth *</strong></label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="cpf">
+                        <label><strong>CPF *</strong></label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="address">
+                        <label><strong>Address *</strong></label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="phoneNumber">
+                        <label><strong>Phone Number *</strong></label>
+                        <input type="tel" required>
+                    </div>
+
+                    <div class="email">
+                        <label><strong>Email *</strong></label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="confirm-cancel-buttons">
+                        <a href="../views/peopleList.html">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="save" id="save">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../js/registrationsScripts/peopleRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
